@@ -1,9 +1,13 @@
 /*
-
-
-
+@author: Minatiuu
 */
 
+/* Geral */
+body {
+    margin: 0px;
+}
+
+/* Declarações */
 #geral_flex_box {
     width: 100vw;
     height: 100vh;
