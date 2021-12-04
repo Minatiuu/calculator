@@ -1,7 +1,7 @@
 "use strict"
 
-function SendNum(id)
+function SendInput(id)
 {
-    const number_register = document.getElementById(id).innerHTML
-    document.getElementById("display").innerHTML = number_register
+    const input_register = document.getElementById(id).innerHTML
+    document.getElementById("display").innerHTML = input_register
 }
