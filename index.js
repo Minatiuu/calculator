@@ -1,13 +1,9 @@
 "use strict"
-let number;
+let number_input;
+let number_input2;
 
-function SendNum(value)
+function SendNum(id)
 {
-    switch (value)
-    {
-        case 0:
-            number = 0;
-            console.log(value);
-            break;         
-    }
+    const number_register = document.getElementById(id).innerHTML
+    document.getElementById("number_1").innerHTML = number_register
 }
