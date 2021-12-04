@@ -65,17 +65,14 @@ main#geral_flex_box {
                 width: 50%;
             }
             #numbers {
-                width: 42%;
+                width: 41%;
             }
-                #numbers_row_four {
-                    width: 25%;
-                }
                 #numbers > :first-child, 
                 #numbers > :last-child {
                     height: 15%;
                 }
             #simp_operations {
-                width: 8.5%;
+                width: 9.5%;
             }
     #calculator_historic {
         width: 25%;
