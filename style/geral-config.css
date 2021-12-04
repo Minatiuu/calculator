@@ -17,7 +17,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 23.3%;
 }
+    .numbers_row > * {
+        width: 33.3%;
+    }
 /* Declarações */
 body {
     width: 100vw;
@@ -63,6 +67,13 @@ main#geral_flex_box {
             #numbers {
                 width: 42%;
             }
+                #numbers_row_four {
+                    width: 25%;
+                }
+                #numbers > :first-child, 
+                #numbers > :last-child {
+                    height: 15%;
+                }
             #simp_operations {
                 width: 8.5%;
             }
