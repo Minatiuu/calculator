@@ -2,78 +2,101 @@
 @author: Minatiuu
 */
 
+/* Media */
+@import url('../fonts/Ubuntu/');
+/* font-family: 'Ubuntu', sans-serif */
+
 /* Geral */
 * {
     box-sizing: border-box;
 }
-body {
+body {/* Remoção da Margem Padrão */
     margin: 0px;
 }
 /* Classes */
-.flex_divisor {
+.flex_divisor {/* Caixa Divisora das Sessões */
     height: 100%;
+
 }
-.numbers_row {
+.numbers_row {/* Linha de Números */
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 23.3%;
 }
-    .numbers_row > * {
+    .numbers_row > * {/* Largura de cada Botão (exceto da primeira e última linha) */
         width: 33.3%;
     }
 /* Declarações */
-body {
+body {/* Corpo da Página */
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
 }
-aside#aside_box {
+aside#aside_box {/* Barra Lateral */
     width: 36px;
 }
-main#geral_flex_box {
+main#geral_flex_box {/* Página Principal do Conteúdo */
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#cabeçalho {
+    height: 36px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#calculator_box {
-    min-width: 900px;
-    max-width: 1200px;
-    width: 90%;
-    min-height: 400px;
-    max-height: 600px;
-    height: 90%;
+    #cabeçalho > div {
+        font: 26px 'Ubuntu', sans-serif;
+    }
+#calculator_box {/* Caixa da Calculadora */
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-    #calculator {
+    #calculator_box > div {
+        min-width: 900px;
+        max-width: 1200px;
+        width: 90%;
+        min-height: 400px;
+        max-height: 600px;
+        height: 90%;
+    }
+    #calculator {/* Espaço da Calculadora */
         height: 100%;
         width: 75%;
     }
-        #geral_data {
+        #geral_data {/* Display da Conta */
             height: 18%;
         }
-        #operations_divisor {
+        #operations_divisor {/* Display dos Números e Operações */
             height: 82%;
             display: flex;
             flex-direction: row;
         }
-            #complex_operations {
+            #complex_operations {/* Operações Complexas */
                 width: 54%;
             }
-            #numbers {
+            #numbers {/* Números */
                 width: 36%;
             }
                 #numbers > :first-child, 
-                #numbers > :last-child {
+                #numbers > :last-child {/* Alteração na Primeira e na Última Linha */
                     height: 15%;
                 }
-            #simp_operations {
+            #simp_operations {/* Operações Simples */
                 width: 10.5%;
+                display: flex;
+                flex-direction: column;
             }
-    #calculator_historic {
+                #simp_operations > * {/* Botões das Operações Simples */
+                    width: 100%;
+                    height: 20%;
+                }
+    #calculator_historic {/* Histórico de Operações */
         width: 25%;
     }
