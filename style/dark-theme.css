@@ -10,3 +10,8 @@
 #geral_flex_box {
     background: #0f0;
 }
+#calculator_box,
+#calculator_box > *,
+#calculator_box > #operations_divisor > * {
+    border: 1px solid #000;
+}
