@@ -3,51 +3,51 @@
 */
 
 /* Geral */
-* {
+* {/* Cor Padrão do Texto */
     color: #ddd;
 }
 /* Classes */
-.numbers_row > * {
+.flex_divisor button {/* Botões */
     background: #333;
     border: 0px;
-    font: 22px 'Ubuntu', sans-serif;
+    font: 24px 'Ubuntu', sans-serif;
     transition: background 0.2s;
 }
-    .numbers_row > *:hover {
+    .flex_divisor > button:hover {
         background: #262626;
     }
 /* Declarações */
-#geral_flex_box {
+#geral_flex_box {/* Página Principal */
     background: #111;
 }
 #calculator_box,
 #calculator_box > #calculator_historic,
 #calculator_box > * > #geral_data,
-#calculator_box > * > #operations_divisor > * {
+#calculator_box > * > #operations_divisor > * {/* Bordas Temporárias */
     border: 1px solid #999;
 }
 
-aside#aside_box {
+aside#aside_box {/* Barra Lateral */
     border-left: 1px solid #0f0;
     border-right: 1px solid #0f0;
     background: #000;
 }
 
-#calculator_box{
+#calculator_box {/* Caixa da Calculadora */
     background: #252525;
     box-shadow: 0px 0px 15px #0008;
 }
     #numbers > :first-child > *,
-    #numbers > :last-child > * {
+    #numbers > :last-child > * {/* Alteração na Primeira e na Última Linha */
         background: #151515;
     } 
         #numbers > :first-child > *:hover,
-        #numbers > :last-child > *:hover {
+        #numbers > :last-child > *:hover {/* Primeira e Última Linha Em Hover */
             background: #0c0c0c;
         }
-        #numbers > :last-child > :last-child {
+        #numbers > :last-child > :last-child {/* Botão de Resultado */
             background: #0b0;
         }
-            #numbers > :last-child > :last-child:hover {
+            #numbers > :last-child > :last-child:hover {/* Botão de Resultado em Hover */
                 background: #090;
             }
