@@ -11,8 +11,11 @@
     background: #333;
     border: 0px;
     font: 22px 'Ubuntu', sans-serif;
+    transition: background 0.2s;
 }
-
+    .numbers_row > *:hover {
+        background: #262626;
+    }
 /* Declarações */
 #geral_flex_box {
     background: #111;
@@ -31,13 +34,20 @@ aside#aside_box {
 }
 
 #calculator_box{
-    background: #222;
+    background: #252525;
     box-shadow: 0px 0px 15px #0008;
 }
-#numbers > :first-child > *,
-#numbers > :last-child > * {
-    background: #151515;
-} 
-    #numbers > :last-child > :last-child {
-        background: #0f0c;
-    }
+    #numbers > :first-child > *,
+    #numbers > :last-child > * {
+        background: #151515;
+    } 
+        #numbers > :first-child > *:hover,
+        #numbers > :last-child > *:hover {
+            background: #0c0c0c;
+        }
+        #numbers > :last-child > :last-child {
+            background: #0b0;
+        }
+            #numbers > :last-child > :last-child:hover {
+                background: #090;
+            }
