@@ -8,15 +8,22 @@
 }
 
 #geral_flex_box {
-    background: #0f0;
+    background: #111;
 }
 #calculator_box,
 #calculator_box > #calculator_historic,
 #calculator_box > * > #geral_data,
 #calculator_box > * > #operations_divisor > * {
-    border: 1px solid #000;
+    border: 1px solid #999;
 }
 
 aside#aside_box {
-    border: 1px solid #000;
+    border-left: 1px solid #0f0;
+    border-right: 1px solid #0f0;
+    background: #000;
+}
+
+#calculator_box{
+    background: #222;
+    box-shadow: 0px 0px 15px #0008;
 }
