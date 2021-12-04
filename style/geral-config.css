@@ -40,6 +40,15 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
     justify-content: center;
     align-items: center;
 }
+#cabeçalho {
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #cabeçalho > div {
+        font: 26px 'Ubuntu', sans-serif;
+    }
 #calculator_box {/* Caixa da Calculadora */
     min-width: 900px;
     max-width: 1200px;
