@@ -54,25 +54,25 @@ main#geral_flex_box {
         width: 75%;
     }
         #geral_data {
-            height: 15%;
+            height: 18%;
         }
         #operations_divisor {
-            height: 85%;
+            height: 82%;
             display: flex;
             flex-direction: row;
         }
             #complex_operations {
-                width: 50%;
+                width: 54%;
             }
             #numbers {
-                width: 41%;
+                width: 36%;
             }
                 #numbers > :first-child, 
                 #numbers > :last-child {
                     height: 15%;
                 }
             #simp_operations {
-                width: 9.5%;
+                width: 10.5%;
             }
     #calculator_historic {
         width: 25%;
