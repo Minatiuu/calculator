@@ -9,7 +9,8 @@ function SendInput(id)
 
 function Equal()
 {
-    if (document.getElementById("number_1").innerHTML.indexOf("+"))
+    const doc = document.getElementById("number_1").innerHTML
+    if (doc.includes("+"))
     {
         console.log("This is a sum")
     }
