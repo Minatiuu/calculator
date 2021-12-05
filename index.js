@@ -1,6 +1,8 @@
 "use strict"
 let collector;
 let state_display = 0;
+let display_1;
+let display_2;
 
 function SendInput(id)
 {
@@ -34,7 +36,7 @@ function SymbolAdd(id)
     }
 }
 
-function SendInput2()
+function SendInput2(id)
 {
     if (state_display == 0)
     {
@@ -45,6 +47,20 @@ function SendInput2()
         const doc = document.getElementById("display2").innerHTML
         const input_register = document.getElementById(id).innerHTML
         document.getElementById("display2").innerHTML = doc + input_register
+    }
+}
+
+function Equal()
+{
+    if (state_display == 0)
+    {
+        state_display = 0
+    }
+    else
+    {
+        display_1 = document.getElementById("display").innerHTML
+        display_2 = document.getElementById("display2").innerHTML
+        document.getElementById("display_final").innerHTML = Number(display_1) + collector + Number(display_2)
     }
 }
 
