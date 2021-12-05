@@ -60,9 +60,10 @@ function Equal()
     {
         display_1 = document.getElementById("display").innerHTML
         display_2 = document.getElementById("display2").innerHTML
+        const display_final = Number(display_1) + Number(display_2)
         if (collector == Symbol("+"))
         {
-            document.getElementById("display").innerHTML = Number(display_1) + Number(display_2)
+            document.getElementById("display").innerHTML = display_final
         }
         
     }
