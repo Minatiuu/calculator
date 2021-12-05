@@ -9,7 +9,7 @@ function SendInput(id)
 
 function SymbolAdd(id)
 {
-    Symbol(id)
+    id = Symbol(id)
     const doc = document.getElementById("number_1").innerHTML
     doc = doc + id
 }
