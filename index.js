@@ -20,7 +20,9 @@ function SendInput(id)
         }
         else
         {
-            state_display = 1
+            const doc = document.getElementById("display3").innerHTML
+            const input_register = document.getElementById(id).innerHTML
+            document.getElementById("display3").innerHTML = doc + input_register
         }
     }
     
@@ -40,20 +42,6 @@ function SymbolAdd(id)
     else
     {
         state_display = 1
-    }
-}
-
-function SendInput2(id)
-{
-    if (state_display == 0)
-    {
-        state_display = 1
-    }
-    else
-    {
-        const doc = document.getElementById("display3").innerHTML
-        const input_register = document.getElementById(id).innerHTML
-        document.getElementById("display3").innerHTML = doc + input_register
     }
 }
 
