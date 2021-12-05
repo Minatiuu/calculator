@@ -44,9 +44,9 @@ function SendInput2(id)
     }
     else
     {
-        const doc = document.getElementById("display2").innerHTML
+        const doc = document.getElementById("display3").innerHTML
         const input_register = document.getElementById(id).innerHTML
-        document.getElementById("display2").innerHTML = doc + input_register
+        document.getElementById("display3").innerHTML = doc + input_register
     }
 }
 
