@@ -4,9 +4,10 @@ Treino de Html, Css e Javascript.
 Uma calculadora com algumas funções em desenvolvimento.
 
 ### Participação:
-_*Front-End*_ _by_:
+_**Front-End**_ _by_:
 
-*[Dev Myna](https://github.com/Minatiuu)
-_*Back-End*_ _by_:
+* [Dev Myna](https://github.com/Minatiuu)
 
-*[Dev Alessandro](https://github.com/DevAles)
+_**Back-End**_ _by_:
+
+* [Dev Alessandro](https://github.com/DevAles)
