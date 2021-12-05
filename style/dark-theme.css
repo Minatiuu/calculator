@@ -7,7 +7,7 @@
 
 /* Geral */
 * {/* Cor Padrão do Texto */
-    color: #ddd;
+    color: #eee;
 }
 /* Classes */
 .flex_divisor button {/* Botões */
@@ -25,13 +25,6 @@
     z-index: 1;
     background: url(../src/wallpaper-1.jpeg) no-repeat fixed center;
 }
-#calculator_box > div,
-#calculator_box > * > #calculator_historic,
-#calculator_box > * > * > #geral_data,
-#calculator_box > * > * > #operations_divisor > * {/* Bordas Temporárias */
-    border: 1px solid #999;
-}
-
 aside#aside_box {/* Barra Lateral */
     border-left: 1px solid #0f0;
     border-right: 1px solid #0f0;
@@ -49,17 +42,24 @@ aside#aside_box {/* Barra Lateral */
     background: #252525;
     box-shadow: 0px 0px 15px #0009;
 }
-    #numbers > :first-child > *,
-    #numbers > :last-child > * {/* Alteração na Primeira e na Última Linha */
-        background: #151515;
-    } 
-        #numbers > :first-child > *:hover,
-        #numbers > :last-child > *:hover {/* Primeira e Última Linha Em Hover */
-            background: #0c0c0c;
+    #
+        #data_message > div {
+            color: #777;
         }
-        #numbers > :last-child > :last-child {/* Botão de Resultado */
-            background: #0b0;
+        #data_historic > div {
+            color: #999;
         }
-            #numbers > :last-child > :last-child:hover {/* Botão de Resultado em Hover */
-                background: #090;
+        #numbers > :first-child > *,
+        #numbers > :last-child > * {/* Alteração na Primeira e na Última Linha */
+            background: #151515;
+        } 
+            #numbers > :first-child > *:hover,
+            #numbers > :last-child > *:hover {/* Primeira e Última Linha Em Hover */
+                background: #0c0c0c;
             }
+            #numbers > :last-child > :last-child {/* Botão de Resultado */
+                background: #0b0;
+            }
+                #numbers > :last-child > :last-child:hover {/* Botão de Resultado em Hover */
+                    background: #090;
+                }
