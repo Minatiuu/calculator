@@ -12,7 +12,7 @@ body {/* Remoção da Margem Padrão */
 /* Classes */
 .flex_divisor {/* Caixa Divisora das Sessões */
     height: 100%;
-
+    --hforced: 15%;
 }
 .numbers_row {/* Linha de Números */
     display: flex;
@@ -104,7 +104,7 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
                 #cop_grid {
                     display: grid;
                     grid-template-rows: 15% auto auto auto auto 15%;
-                    height: 85%;
+                    height: 100%;
                     width: 100%;
                 }
                     #cop_grid > div#cop_conversions {
@@ -122,7 +122,7 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
                     height: 15%;
                 }
             #simp_operations {/* Operações Simples */
-                width: 10.5%;
+                width: 10%;
                 display: flex;
                 flex-direction: column;
             }
