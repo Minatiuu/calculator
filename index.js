@@ -58,8 +58,9 @@ function Equal()
     }
     else
     {
-        display_1 =  document.getElementById("display1").innerHTML
-        display_3 =  document.getElementById("display3").innerHTML
+        display_1 = document.getElementById("display").innerHTML
+        display_3 = document.getElementById("display3").innerHTML
+
         const display_final = Number(display_1) + Number(display_3)
         if (collector == Symbol("+"))
         {
