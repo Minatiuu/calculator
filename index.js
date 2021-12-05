@@ -2,7 +2,7 @@
 let collector;
 let state_display = 0;
 let display_1;
-let display_2;
+let display_3;
 
 function SendInput(id)
 {
@@ -10,7 +10,7 @@ function SendInput(id)
     {
         const doc = document.getElementById("display").innerHTML
         const input_register = document.getElementById(id).innerHTML
-        document.getElementById("display").innerHTML = doc + input_register
+        document.getElementById("display3").innerHTML = doc + input_register
     }
     else
     {
@@ -27,7 +27,7 @@ function SymbolAdd(id)
         id = Symbol(id)
         const doc = document.getElementById("display").innerHTML
         collector = id
-        document.getElementById("display").innerHTML = doc + string_op
+        document.getElementById("display2").innerHTML = string_op
         state_display = 1
     }
     else
@@ -59,8 +59,8 @@ function Equal()
     else
     {
         display_1 = document.getElementById("display").innerHTML
-        display_2 = document.getElementById("display2").innerHTML
-        const display_final = Number(display_1) + Number(display_2)
+        display_3 = document.getElementById("display3").innerHTML
+        const display_final = Number(display_1) + Number(display_3)
         if (collector == Symbol("+"))
         {
             document.getElementById("display").innerHTML = display_final
