@@ -12,13 +12,12 @@ body {/* Remoção da Margem Padrão */
 /* Classes */
 .flex_divisor {/* Caixa Divisora das Sessões */
     height: 100%;
-    --hforced: 15%;
 }
 .numbers_row {/* Linha de Números */
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 23.3%;
+    height: 23.33%;
 }
     .numbers_row > * {/* Largura de cada Botão (exceto da primeira e última linha) */
         width: 33.3%;
@@ -48,6 +47,7 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
 }
     #cabeçalho > div {/* Texto do Cabeçalho */
         font: 26px 'Ubuntu-Medium', sans-serif;
+        user-select: none;
     }
 #calculator_box {/* Caixa da Calculadora */
     display: flex;
@@ -79,6 +79,7 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
             }
             #geral_data > div:not(:first-child) > div {
                 text-align: right;
+                user-select: none;
             }
             #data_message {
                 height: 20%;
