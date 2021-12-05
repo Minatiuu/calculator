@@ -58,13 +58,12 @@ function Equal()
     }
     else
     {
-        display_1 = document.getElementById("display").innerHTML
-        display_3 = document.getElementById("display3").innerHTML
         const display_final = Number(display_1) + Number(display_3)
         if (collector == Symbol("+"))
         {
             document.getElementById("display").innerHTML = display_final
         }
+        return display_final
         
     }
 }
