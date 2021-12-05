@@ -24,10 +24,10 @@
     background: #111;
     z-index: 1;
 }
-#calculator_box,
-#calculator_box > #calculator_historic,
-#calculator_box > * > #geral_data,
-#calculator_box > * > #operations_divisor > * {/* Bordas Temporárias */
+#calculator_box > div,
+#calculator_box > * > #calculator_historic,
+#calculator_box > * > * > #geral_data,
+#calculator_box > * > * > #operations_divisor > * {/* Bordas Temporárias */
     border: 1px solid #999;
 }
 

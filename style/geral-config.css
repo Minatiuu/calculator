@@ -48,13 +48,13 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
     align-items: center;
 }
     #cabeçalho > div {
-        font: 26px 'Ubuntu', sans-serif;
+        font: 26px 'Ubuntu-Bold-Italic', sans-serif;
     }
 #calculator_box {/* Caixa da Calculadora */
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height:
 }
     #calculator_box > div {
         min-width: 900px;
