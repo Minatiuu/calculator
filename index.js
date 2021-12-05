@@ -13,6 +13,7 @@ function Equal()
     if (doc.includes("+"))
     {
         console.log("This is a sum")
+        return Number(doc)
     }
     else
     {
