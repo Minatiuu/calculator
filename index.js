@@ -6,15 +6,22 @@ let display_3;
 
 function SendInput(id)
 {
-    if (state_display == 0)
+    if (document.getElementById("display").innerHTML = "")
     {
-        const doc = document.getElementById('display').innerHTML
-        const input_register = document.getElementById(id).innerHTML
-        document.getElementById("display").innerHTML = doc + input_register
+        document.getElementById("display").innerHTML = document.getElementById(id).innerHTML
     }
     else
     {
-        state_display = 1
+        if (state_display == 0)
+        {
+            const doc = document.getElementById("display").innerHTML
+            const input_register = document.getElementById(id).innerHTML
+            document.getElementById("display").innerHTML = doc + input_register
+        }
+        else
+        {
+            state_display = 1
+        }
     }
     
 }
