@@ -64,10 +64,15 @@ function Equal()
         const display_final = Number(display_1) + Number(display_3)
         if (collector == Symbol("+"))
         {
-            document.getElementById("display").innerHTML = display_final
+            document.getElementById("data_display").innerHTML = display_final
         }
         return display_final
         
     }
+}
+
+function Clear()
+{
+    document.getElementById("data_display").innerHTML = ""
 }
 
