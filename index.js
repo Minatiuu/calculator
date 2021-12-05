@@ -9,8 +9,9 @@ function SendInput(id)
 
 function SymbolAdd(id)
 {
+    const string_op = id
     id = Symbol(id)
     const doc = document.getElementById("number_1").innerHTML
     const operator = id
-    document.getElementById("number_1").innerHTML = doc + toString(id)
+    document.getElementById("number_1").innerHTML = doc + string_op
 }
