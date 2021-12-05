@@ -7,16 +7,8 @@ function SendInput(id)
     document.getElementById("number_1").innerHTML = doc + input_register
 }
 
-function Equal()
+function SymbolAdd(id)
 {
     const doc = document.getElementById("number_1").innerHTML
-    if (doc.includes("+"))
-    {
-        console.log("This is a sum")
-        return doc
-    }
-    else
-    {
-        console.log("Not is a sum")
-    }
+    doc = doc + id
 }
