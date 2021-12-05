@@ -54,7 +54,7 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
     display: flex;
     justify-content: center;
     align-items: center;
-    height:
+    height: calc(100% - 36px);
 }
     #calculator_box > div {
         min-width: 900px;
