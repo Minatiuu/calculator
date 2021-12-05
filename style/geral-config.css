@@ -62,6 +62,7 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
         min-height: 400px;
         max-height: 600px;
         height: 90%;
+        display: flex;
     }
     #calculator {/* Espaço da Calculadora */
         height: 100%;
@@ -102,13 +103,12 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
             }
                 #cop_grid {
                     display: grid;
-                    grid-template-rows: 15% auto auto auto auto;
-                    height: 100%;
+                    grid-template-rows: 15% auto auto auto auto 15%;
+                    height: 85%;
                     width: 100%;
                 }
                     #cop_grid > div#cop_conversions {
-                        grid-column-start: 1;
-                        grid-column-end: 7;
+                        grid-area: 1 / 7 / 1 / 1;
                     }
                         #cop_grid button {
                             height: 100%;
@@ -132,4 +132,9 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
                 }
     #calculator_historic {/* Histórico de Operações */
         width: 25%;
+        padding: 1% 0.5%;
+        overflow: scroll;
     }
+        #calculator_historic > div {
+            font: 15px 'Ubuntu-Medium', sans-serif;
+        }
