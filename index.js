@@ -60,8 +60,11 @@ function Equal()
     {
         display_1 = document.getElementById("display").innerHTML
         display_2 = document.getElementById("display2").innerHTML
-        document.getElementById("display_final").innerHTML = Number(display_1) + collector + Number(display_2)
-        console.log(collector)
+        if (collector == Symbol("+"))
+        {
+            document.getElementById("display_final").innerHTML = Number(display_1) + Number(display_2)
+        }
+        
     }
 }
 
