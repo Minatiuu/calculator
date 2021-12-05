@@ -14,6 +14,7 @@ function SendInput(id)
     }
     else
     {
+        state_display = 2
         const doc = document.getElementById("display3").innerHTML
         const input_register = document.getElementById(id).innerHTML
         document.getElementById("display3").innerHTML = doc + input_register
@@ -25,12 +26,10 @@ function SymbolAdd(id)
 {
     if (state_display == 0)
     {
-        const string_op = id
-        id = Symbol(id)
-        const doc = document.getElementById("display").innerHTML
         collector = id
-        document.getElementById("display2").innerHTML = string_op
+        document.getElementById("display2").innerHTML = id
         state_display = 1
+
     }
     else
     {
@@ -49,14 +48,29 @@ function Equal()
         display_1 = document.getElementById("display").innerHTML
         display_3 = document.getElementById("display3").innerHTML
 
-        const display_final = Number(display_1) + Number(display_3)
-        if (collector = Symbol("+"))
+        const number_1 = Number(display_1)
+        const number_2 = Number(display_3)
+
+        if (collector == '+')
         {
             ClearAll()
-            document.getElementById("display").innerHTML = display_final
+            document.getElementById("display").innerHTML = number_1 + number_2
         }
-        return display_final
-        
+        if (collector == '-')
+        {
+            ClearAll()
+            document.getElementById("display").innerHTML = number_1 - number_2
+        }
+        if (collector == '/')
+        {
+            ClearAll()
+            document.getElementById("display").innerHTML = number_1 / number_2
+        }
+        if (collector == '*')
+        {
+            ClearAll()
+            document.getElementById("display").innerHTML = number_1 * number_2
+        }
     }
 }
 
@@ -66,5 +80,32 @@ function ClearAll()
     document.getElementById("display2").innerHTML = ""
     document.getElementById("display3").innerHTML = ""
     state_display = 0
+}
+
+function Clear()
+{
+    switch (state_display)
+    {
+        case 0:
+            document.getElementById("display").innerHTML = ""
+            state_display = 0
+            break;
+
+        case 1:
+            document.getElementById("display2").innerHTML = ""
+            state_display = 0
+            break;
+        
+        case 2:
+            document.getElementById("display3").innerHTML = ""
+            state_display = 2
+            break;
+
+        default:
+            ClearAll()
+            document.getElementById("display").innerHTML = "Error"
+            state_display = 0
+    }
+
 }
 
