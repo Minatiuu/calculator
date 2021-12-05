@@ -13,4 +13,8 @@ function Equal()
     {
         console.log("This is a sum")
     }
+    else
+    {
+        console.log("Not is a sum")
+    }
 }
