@@ -12,6 +12,5 @@ function SymbolAdd(id)
     id = Symbol(id)
     const doc = document.getElementById("number_1").innerHTML
     const operator = id
-    toString(id)
-    document.getElementById("number_1").innerHTML = doc + id
+    document.getElementById("number_1").innerHTML = doc + toString(id)
 }
