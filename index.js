@@ -6,7 +6,7 @@ let display_3;
 
 function SendInput(id)
 {
-    if (document.getElementById("display").innerHTML = "")
+    if (document.getElementById("display").innerHTML = null)
     {
         document.getElementById("display").innerHTML = document.getElementById(id).innerHTML
     }
