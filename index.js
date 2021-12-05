@@ -73,7 +73,7 @@ function Equal()
 
             default:
                 ClearAll()
-                document.getElementById("display").innerHTML = "Error"
+                document.getElementById("data_message").innerHTML = "Error"
             
         }
         return display_final
