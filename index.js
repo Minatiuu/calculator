@@ -26,11 +26,8 @@ function SymbolAdd(id)
 {
     if (state_display == 0)
     {
-        const string_op = id
-        id = Symbol(id)
-        const doc = document.getElementById("display").innerHTML
         collector = id
-        document.getElementById("display2").innerHTML = string_op
+        document.getElementById("display2").innerHTML = id
         state_display = 1
 
     }
@@ -51,26 +48,29 @@ function Equal()
         display_1 = document.getElementById("display").innerHTML
         display_3 = document.getElementById("display3").innerHTML
 
-        const display_finalmore = Number(display_1) + Number(display_3)
-        const display_finalloss = Number(display_1) - Number(display_3)
-        const display_finalmult = Number(display_1) * Number(display_3)
+        const number_1 = Number(display_1)
+        const number_2 = Number(display_3)
 
-        if (collector = Symbol("+"))
+        if (collector == '+')
         {
             ClearAll()
-            document.getElementById("display").innerHTML = display_finalmore
+            document.getElementById("display").innerHTML = number_1 + number_2
         }
-        if (collector = Symbol("-"))
+        if (collector == '-')
         {
             ClearAll()
-            document.getElementById("display").innerHTML = display_finalloss
+            document.getElementById("display").innerHTML = number_1 - number_2
         }
-        if (collector = Symbol("*"))
+        if (collector == '/')
         {
             ClearAll()
-            document.getElementById("display").innerHTML = display_finalmult
+            document.getElementById("display").innerHTML = number_1 / number_2
         }
-        
+        if (collector == '*')
+        {
+            ClearAll()
+            document.getElementById("display").innerHTML = number_1 * number_2
+        }
     }
 }
 
