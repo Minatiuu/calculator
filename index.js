@@ -3,9 +3,19 @@
 function SendInput(id)
 {
     const input_register = document.getElementById(id).innerHTML
-    document.getElementById("display").innerHTML = input_register
-    if (document.getElementById("display").innerHTML.indexOf("+"))
+    document.getElementById("number_1").innerHTML = input_register
+
+}
+
+function Equal()
+{
+    const doc = document.getElementById("number_1").innerHTML
+    if (doc.includes("+"))
     {
         console.log("This is a sum")
+    }
+    else
+    {
+        console.log("Not is a sum")
     }
 }
