@@ -74,7 +74,7 @@ function Equal()
     }
 }
 
-function Clear()
+function ClearAll()
 {
     document.getElementById("display").innerHTML = ""
     document.getElementById("display2").innerHTML = ""
