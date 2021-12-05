@@ -6,27 +6,20 @@ let display_3;
 
 function SendInput(id)
 {
-    if (document.getElementById("display").innerHTML = null)
+    if (state_display == 0)
     {
-        document.getElementById("display").innerHTML = document.getElementById(id).innerHTML
+        const doc = document.getElementById("display").innerHTML
+        const input_register = document.getElementById(id).innerHTML
+        document.getElementById("display").innerHTML = doc + input_register
     }
     else
     {
-        if (state_display == 0)
-        {
-            const doc = document.getElementById("display").innerHTML
-            const input_register = document.getElementById(id).innerHTML
-            document.getElementById("display").innerHTML = doc + input_register
-        }
-        else
-        {
-            const doc = document.getElementById("display3").innerHTML
-            const input_register = document.getElementById(id).innerHTML
-            document.getElementById("display3").innerHTML = doc + input_register
-        }
-    }
-    
+        const doc = document.getElementById("display3").innerHTML
+        const input_register = document.getElementById(id).innerHTML
+        document.getElementById("display3").innerHTML = doc + input_register
+    }      
 }
+    
 
 function SymbolAdd(id)
 {
@@ -57,9 +50,10 @@ function Equal()
         display_3 = document.getElementById("display3").innerHTML
 
         const display_final = Number(display_1) + Number(display_3)
-        if (collector == Symbol("+"))
+        if (collector = Symbol("+"))
         {
-            document.getElementById("data_display").innerHTML = display_final
+            ClearAll()
+            document.getElementById("display").innerHTML = display_final
         }
         return display_final
         
@@ -68,6 +62,9 @@ function Equal()
 
 function ClearAll()
 {
-    document.getElementById("data_display").innerHTML = ""
+    document.getElementById("display").innerHTML = ""
+    document.getElementById("display2").innerHTML = ""
+    document.getElementById("display3").innerHTML = ""
+    state_display = 0
 }
 
