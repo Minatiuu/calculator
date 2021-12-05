@@ -51,11 +51,30 @@ function Equal()
         display_1 = document.getElementById("display").innerHTML
         display_3 = document.getElementById("display3").innerHTML
 
-        const display_final = Number(display_1) + Number(display_3)
-        if (collector = Symbol("+"))
+        const display_finalmore = Number(display_1) + Number(display_3)
+        const display_finalloss = Number(display_1) - Number(display_3)
+        const display_finalmult = Number(display_1) * Number(display_3)
+        switch (collector)
         {
-            ClearAll()
-            document.getElementById("display").innerHTML = display_final
+            case Symbol("+"):
+                ClearAll()
+                document.getElementById("display").innerHTML = display_finalmore
+                break;
+               
+            case Symbol("-"):
+                ClearAll()
+                document.getElementById("display").innerHTML = display_finalloss
+                break;
+
+            case Symbol("*"):
+                ClearAll()
+                document.getElementById("display").innerHTML = display_finalmult
+                break;
+
+            default:
+                ClearAll()
+                document.getElementById("display").innerHTML = "Error"
+            
         }
         return display_final
         
@@ -76,19 +95,23 @@ function Clear()
     {
         case 0:
             document.getElementById("display").innerHTML = ""
+            state_display = 0
             break;
 
         case 1:
             document.getElementById("display2").innerHTML = ""
+            state_display = 0
             break;
         
         case 2:
             document.getElementById("display3").innerHTML = ""
+            state_display = 2
             break;
 
         default:
             ClearAll()
             document.getElementById("display").innerHTML = "Error"
+            state_display = 0
     }
 
 }
