@@ -8,7 +8,7 @@ function SendInput(id)
 {
     if (state_display == 0)
     {
-        const doc = document.getElementById("display").innerHTML
+        const doc = document.getElementById('display').innerHTML
         const input_register = document.getElementById(id).innerHTML
         document.getElementById("display").innerHTML = doc + input_register
     }
