@@ -1,15 +1,14 @@
 /*
 @author: Minatiuu
 */
-
-/* Media */
 /* Geral */
-* {
+* {/* Aplicação do Border-Sizing geral */
     box-sizing: border-box;
 }
 body {/* Remoção da Margem Padrão */
     margin: 0px;
 }
+
 /* Classes */
 .flex_divisor {/* Caixa Divisora das Sessões */
     height: 100%;
@@ -40,15 +39,15 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
     display: flex;
     flex-direction: column;
 }
-#cabeçalho {
+#cabeçalho {/* Cabeçalho da Página */
     height: 36px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-    #cabeçalho > div {
-        font: 26px 'Ubuntu-Bold-Italic', sans-serif;
+    #cabeçalho > div {/* Texto do Cabeçalho */
+        font: 26px 'Ubuntu-Medium', sans-serif;
     }
 #calculator_box {/* Caixa da Calculadora */
     display: flex;
@@ -56,7 +55,7 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
     align-items: center;
     height: calc(100% - 36px);
 }
-    #calculator_box > div {
+    #calculator_box > div {/* Calculadora */
         min-width: 900px;
         max-width: 1200px;
         width: 90%;
@@ -70,7 +69,29 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
     }
         #geral_data {/* Display da Conta */
             height: 18%;
+            padding: 0.5% 1%;
         }
+            #geral_data > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            #geral_data > div:not(:first-child) > div {
+                text-align: right;
+            }
+            #data_message {
+                height: 20%;
+                font: 18px 'Ubuntu-Light', sans-serif;
+            }
+            #data_display {
+                height: 50%;
+                font: 30px 'Ubuntu-Bold', sans-serif;
+            }
+            #data_historic {
+                height: 30%;
+                height: 30%;
+                font: 20px 'Ubuntu-Regular', sans-serif;
+            }
         #operations_divisor {/* Display dos Números e Operações */
             height: 82%;
             display: flex;
@@ -79,6 +100,20 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
             #complex_operations {/* Operações Complexas */
                 width: 54%;
             }
+                #cop_grid {
+                    display: grid;
+                    grid-template-rows: 15% auto auto auto auto;
+                    height: 100%;
+                    width: 100%;
+                }
+                    #cop_grid > div#cop_conversions {
+                        grid-column-start: 1;
+                        grid-column-end: 7;
+                    }
+                        #cop_grid button {
+                            height: 100%;
+                            width: 100%;
+                        }
             #numbers {/* Números */
                 width: 36%;
             }
