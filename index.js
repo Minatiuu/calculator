@@ -54,29 +54,22 @@ function Equal()
         const display_finalmore = Number(display_1) + Number(display_3)
         const display_finalloss = Number(display_1) - Number(display_3)
         const display_finalmult = Number(display_1) * Number(display_3)
-        switch (collector)
+
+        if (collector = Symbol("+"))
         {
-            case Symbol("+"):
-                ClearAll()
-                document.getElementById("display").innerHTML = display_finalmore
-                break;
-               
-            case Symbol("-"):
-                ClearAll()
-                document.getElementById("display").innerHTML = display_finalloss
-                break;
-
-            case Symbol("*"):
-                ClearAll()
-                document.getElementById("display").innerHTML = display_finalmult
-                break;
-
-            default:
-                ClearAll()
-                document.getElementById("data_message").innerHTML = "Error"
-            
+            ClearAll()
+            document.getElementById("display").innerHTML = display_finalmore
         }
-        return display_final
+        if (collector = Symbol("-"))
+        {
+            ClearAll()
+            document.getElementById("display").innerHTML = display_finalloss
+        }
+        if (collector = Symbol("*"))
+        {
+            ClearAll()
+            document.getElementById("display").innerHTML = display_finalmult
+        }
         
     }
 }
