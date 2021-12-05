@@ -62,7 +62,7 @@ function Equal()
         display_2 = document.getElementById("display2").innerHTML
         if (collector == Symbol("+"))
         {
-            document.getElementById("display_final").innerHTML = Number(display_1) + Number(display_2)
+            document.getElementById("display").innerHTML = Number(display_1) + Number(display_2)
         }
         
     }
