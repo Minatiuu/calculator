@@ -14,6 +14,7 @@ function SendInput(id)
     }
     else
     {
+        state_display = 2
         const doc = document.getElementById("display3").innerHTML
         const input_register = document.getElementById(id).innerHTML
         document.getElementById("display3").innerHTML = doc + input_register
@@ -31,6 +32,7 @@ function SymbolAdd(id)
         collector = id
         document.getElementById("display2").innerHTML = string_op
         state_display = 1
+
     }
     else
     {
@@ -66,5 +68,28 @@ function ClearAll()
     document.getElementById("display2").innerHTML = ""
     document.getElementById("display3").innerHTML = ""
     state_display = 0
+}
+
+function Clear()
+{
+    switch (state_display)
+    {
+        case 0:
+            document.getElementById("display").innerHTML = ""
+            break;
+
+        case 1:
+            document.getElementById("display2").innerHTML = ""
+            break;
+        
+        case 2:
+            document.getElementById("display3").innerHTML = ""
+            break;
+
+        default:
+            ClearAll()
+            document.getElementById("display").innerHTML = "Error"
+    }
+
 }
 
