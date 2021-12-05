@@ -1,6 +1,9 @@
 /*
 @author: Minatiuu
 */
+/* Media */
+@import '../fonts/Ubuntu/';
+/* font-family: 'Ubuntu', sans-serif */
 
 /* Geral */
 * {/* Cor Padrão do Texto */
@@ -35,10 +38,10 @@ aside#aside_box {/* Barra Lateral */
     box-shadow: 0px 0px 15px #0009;
     z-index: 3;
 }
-#cabeçalho {
+#cabeçalho {/* Cabeçalho */
     background: #050505;
 }
-#calculator_box {/* Caixa da Calculadora */
+#calculator_box > div {/* Caixa da Calculadora */
     background: #252525;
     box-shadow: 0px 0px 15px #0009;
 }

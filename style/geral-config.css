@@ -3,9 +3,6 @@
 */
 
 /* Media */
-@import url('../fonts/Ubuntu/');
-/* font-family: 'Ubuntu', sans-serif */
-
 /* Geral */
 * {
     box-sizing: border-box;
@@ -57,6 +54,7 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
     #calculator_box > div {
         min-width: 900px;
