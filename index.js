@@ -10,7 +10,7 @@ function SendInput(id)
     {
         const doc = document.getElementById("display").innerHTML
         const input_register = document.getElementById(id).innerHTML
-        document.getElementById("display3").innerHTML = doc + input_register
+        document.getElementById("display").innerHTML = doc + input_register
     }
     else
     {
