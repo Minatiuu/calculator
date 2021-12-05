@@ -1,9 +1,9 @@
-## Projeto de Calculadora
+# Projeto de Calculadora
 Treino de Html, Css e Javascript.
 
 Uma calculadora com algumas funções em desenvolvimento.
 
-### Participação:
+## Participação:
 _**Front-End**_ _by_:
 
 * [Dev Myna](https://github.com/Minatiuu)

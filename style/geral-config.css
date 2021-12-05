@@ -133,8 +133,14 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
     #calculator_historic {/* Histórico de Operações */
         width: 25%;
         padding: 1% 0.5%;
-        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
         #calculator_historic > div {
             font: 15px 'Ubuntu-Medium', sans-serif;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 0.5%;
+            text-align: right;
         }
