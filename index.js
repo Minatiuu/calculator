@@ -38,6 +38,20 @@ function SymbolAdd(id)
     }
 }
 
+function SendInput2(id)
+{
+    if (state_display == 0)
+    {
+        state_display = 1
+    }
+    else
+    {
+        const doc = document.getElementById("display3").innerHTML
+        const input_register = document.getElementById(id).innerHTML
+        document.getElementById("display3").innerHTML = doc + input_register
+    }
+}
+
 function Equal()
 {
     if (state_display == 0)
@@ -60,7 +74,7 @@ function Equal()
     }
 }
 
-function ClearAll()
+function Clear()
 {
     document.getElementById("display").innerHTML = ""
     document.getElementById("display2").innerHTML = ""

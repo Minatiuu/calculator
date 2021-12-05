@@ -37,7 +37,15 @@
                 <div id="operations_divisor">
                     <div id="complex_operations" class="flex_divisor">
                         <div id="cop_grid">
-                            <div id="cop_conversions"></div>
+                            <div id="cop_conversions">
+
+                            </div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
                             <div><button></button></div>
                             <div><button></button></div>
                             <div><button></button></div>
@@ -67,42 +75,59 @@
                     <div id="numbers" class="flex_divisor">
                         <div id="numbers_row_four" class="numbers_row">
                             <button id="number_clearall" onclick="ClearAll()">CE</button>
-                            <button id="number_left_parenth">(</button>
-                            <button id="number_right_parenth">)</button>
-                            <button id="number_clear">C</button>
+                            <button id="number_left_parenth" onclick="SymbolAdd('(')">(</button>
+                            <button id="number_right_parenth" onclick="SymbolAdd(')')">)</button>
+                            <button id="number_clear" onclick="Clear()">C</button>
                         </div>
                         <div class="numbers_row">
-                            <button id="number_7" onclick="SendInput('number_7')">7</button>
-                            <button id="number_8" onclick="SendInput('number_8')">8</button>
-                            <button id="number_9" onclick="SendInput('number_9')">9</button>
+                            <button id="number_7" onclick="SendInput('7')">7</button>
+                            <button id="number_8" onclick="SendInput('8')">8</button>
+                            <button id="number_9" onclick="SendInput('9')">9</button>
                         </div>
                         <div class="numbers_row">
-                            <button id="number_4" onclick="SendInput('number_4')">4</button>
-                            <button id="number_5" onclick="SendInput('number_5')">5</button>
-                            <button id="number_6" onclick="SendInput('number_6')">6</button>
+                            <button id="number_4" onclick="SendInput('4')">4</button>
+                            <button id="number_5" onclick="SendInput('5')">5</button>
+                            <button id="number_6" onclick="SendInput('6')">6</button>
                         </div>
                         <div class="numbers_row">
-                            <button id="number_1" onclick="SendInput('number_1')">1</button>
-                            <button id="number_2" onclick="SendInput('number_2')">2</button>
-                            <button id="number_3" onclick="SendInput('number_3')">3</button>
+                            <button id="number_1" onclick="SendInput('1')">1</button>
+                            <button id="number_2" onclick="SendInput('2')">2</button>
+                            <button id="number_3" onclick="SendInput('3')">3</button>
                         </div>
                         <div class="numbers_row">
-                            <button id="number_0" onclick="SendInput('number_0')">0</button>
-                            <button id="number_point">.</button>
+                            <button id="number_0" onclick="SendInput('0')">0</button>
+                            <button id="number_point" onclick="SymbolAdd('.')">.</button>
                             <button id="number_equal" onclick="Equal()">=</button>
                         </div>
                     </div>
                     <div id="simp_operations" class="flex_divisor">
-                        <button id="sop_more" onclick="SymbolAdd('+')">+</button>
-                        <button id="sop_less">-</button>
-                        <button id="sop_divide">/</button>
-                        <button id="sop_multiplic">*</button>
-                        <button id="percentage">%</button>
+                        <button id="sop_more" onclick="More()">+</button>
+                        <button id="sop_less" onclick="Less()">-</button>
+                        <button id="sop_divide" onclick="Divide()">/</button>
+                        <button id="sop_multiplic" onclick="Multiplic()">*</button>
+                        <button id="percentage" onclick="Percentage()">%</button>
                     </div>
                 </div>
             </section>
             <section id ="calculator_historic">
-
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
+                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5</div>
             </section>
         </div>
         </article>

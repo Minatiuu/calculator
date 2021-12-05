@@ -42,7 +42,12 @@ aside#aside_box {/* Barra Lateral */
     background: #252525;
     box-shadow: 0px 0px 15px #0009;
 }
-    #
+    #calculator_historic {
+        border-left: 1px solid #444;
+    }
+        #calculator_historic > div {
+            color: #777;
+        }
         #data_message > div {
             color: #777;
         }
