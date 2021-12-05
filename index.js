@@ -27,7 +27,6 @@ function SymbolAdd(id)
     {
         const string_op = id
         id = Symbol(id)
-        const doc = document.getElementById("display").innerHTML
         collector = id
         document.getElementById("display2").innerHTML = string_op
         state_display = 1
