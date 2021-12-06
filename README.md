@@ -11,3 +11,7 @@ _**Front-End**_ _by_:
 _**Back-End**_ _by_:
 
 * [Dev Alessandro](https://github.com/DevAles)
+
+_**Revisão**_ _by_:
+
+* [Dev Myna](https://github.com/Minatiuu)
