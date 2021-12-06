@@ -105,8 +105,8 @@
                     <div id="numbers" class="flex_divisor">
                         <div id="numbers_row_four" class="numbers_row">
                             <button id="number_clearall" onclick="ClearAll()">CE</button>
-                            <button id="number_left_parenth" onclick="SymbolAdd('(')">(</button>
-                            <button id="number_right_parenth" onclick="SymbolAdd(')')">)</button>
+                            <button id="number_left_parenth" onclick="SendInput('number_left_parenth')">(</button>
+                            <button id="number_right_parenth" onclick="SendInput('number_right_parenth')">)</button>
                             <button id="number_clear" onclick="Clear()">C</button>
                         </div>
                         <div class="numbers_row">
@@ -126,16 +126,16 @@
                         </div>
                         <div class="numbers_row">
                             <button id="number_0" onclick="SendInput('number_0')">0</button>
-                            <button id="number_point" onclick="SymbolAdd('.')">.</button>
+                            <button id="number_point" onclick="SendInput('number_point')">.</button>
                             <button id="number_equal" onclick="Equal()">=</button>
                         </div>
                     </div>
                     <div id="simp_operations" class="flex_divisor">
-                        <button id="sop_more" onclick="SymbolAdd('+')">+</button>
-                        <button id="sop_less" onclick="SymbolAdd('-')">-</button>
-                        <button id="sop_divide" onclick="SymbolAdd('/')">/</button>
-                        <button id="sop_multiplic" onclick="SymbolAdd('*')">*</button>
-                        <button id="percentage" onclick="SymbolAdd('%')">%</button>
+                        <button id="sop_more" onclick="SendInput('sop_more')">+</button>
+                        <button id="sop_less" onclick="SendInput('sop_loss')">-</button>
+                        <button id="sop_divide" onclick="SendInput('sop_divide')">/</button>
+                        <button id="sop_multiplic" onclick="SendInput('sop_multiplic')">*</button>
+                        <button id="percentage" onclick="SendInput('percentage')">%</button>
                     </div>
                 </div>
             </section>
