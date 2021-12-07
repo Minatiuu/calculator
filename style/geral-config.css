@@ -22,6 +22,12 @@ body {/* Remoção da Margem Padrão */
     .numbers_row > * {/* Largura de cada Botão (exceto da primeira e última linha) */
         width: 33.3%;
     }
+    .nav_icon {
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 /* Declarações */
 body {/* Corpo da Página */
     width: 100vw;
@@ -30,8 +36,25 @@ body {/* Corpo da Página */
     flex-direction: row;
 }
 aside#aside_box {/* Barra Lateral */
-    width: 36px;
+    width: 37px;
 }
+    nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+        section#nav_top {
+            height: 36px;
+        }
+            section#nav_top > div > div {
+                font: 25px 'Ubuntu-Bold';
+            }
+        section#nav_mid {
+            height: calc(100% - 72px);
+        }
+        section#nav_bottom {
+            height: 36px;
+        }
 main#geral_flex_box {/* Página Principal do Conteúdo */
     width: 100%;
     height: 100vh;
@@ -144,4 +167,5 @@ main#geral_flex_box {/* Página Principal do Conteúdo */
             overflow: hidden;
             margin-bottom: 0.5%;
             text-align: right;
+            scrollbar-width: thin;
         }
