@@ -1,0 +1,10 @@
+{
+  "log_error": {
+    "sintaxe": "Sintaxe mal formada.",
+    "expression": "Expressão mal formada."
+  },
+  "tests": {
+    "calculation": "((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5",
+    "result": "-140.233947368"
+  }
+}
