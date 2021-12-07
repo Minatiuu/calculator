@@ -17,16 +17,13 @@ function Equal()
         }
         catch(err)
         {
-            if (err.name = "SyntaxError")
+            if (err.name = "SyntaxError" || "TypeError")
             {
                 document.getElementById("data_message").innerHTML = ""
+                document.getElementById("data_message").style.color = "red"
                 document.getElementById("data_message").innerHTML = "Sintaxe Mal Formada"
             }
-            if (err.name = "TypeError")
-            {
-                document.getElementById("data_message").innerHTML = ""
-                document.getElementById("data_message").innerHTML = "Sintaxe Mal Formada"
-            }
+    
         }
     }
     else
@@ -41,4 +38,3 @@ function ClearAll()
 {
     document.getElementById("display").innerHTML = ""
 }
-
