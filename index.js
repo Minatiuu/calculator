@@ -22,6 +22,14 @@ function Equal()
                 document.getElementById("data_message").innerHTML = ""
                 document.getElementById("data_message").style.color = "red"
                 document.getElementById("data_message").innerHTML = "Sintaxe Mal Formada"
+                console.log(err.name)
+            }
+            else
+            {
+                document.getElementById("data_message").innerHTML = ""
+                document.getElementById("data_message").style.color = "red"
+                document.getElementById("data_message").innerHTML = "Erro Desconhecido"
+                console.log(err.name)
             }
     
         }
