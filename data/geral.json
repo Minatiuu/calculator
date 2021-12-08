@@ -1,8 +1,9 @@
 {
-  "log_error": {
+  "jLog": {
     "sintaxe": "Sintaxe mal formada.",
     "expression": "Expressão mal formada.",
-    "maxvalue": "Valor máximo excedido."
+    "maxvalue": "Valor máximo excedido.",
+    "maxchar": "Valor máximo de caracteres excedido."
   },
   "tests": {
     "calculation": "((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5",
