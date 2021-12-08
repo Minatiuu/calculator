@@ -35,7 +35,7 @@ function SendButton(event)
             break;
         case 49:
             //Key_1
-            document.getElementById("display").innerHTML = doc + "1"
+            document.getElezmentById("display").innerHTML = doc + "1"
             break;
         case 50:
             // Key_2
@@ -130,3 +130,4 @@ function ClearAll()
     document.getElementById("data_message").innerHTML = ""
     document.getElementById("display").innerHTML = ""
 }
+//test
