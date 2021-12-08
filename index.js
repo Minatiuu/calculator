@@ -25,6 +25,10 @@ function SendButton(event)
             //Key_plus
             document.getElementById("display").innerHTML = doc + "+";
             break;
+        case 46:
+            //Key_Delete
+            ClearAll()
+            break;
         case 48:
             //Key_0
             document.getElementById("display").innerHTML = doc + "0";
