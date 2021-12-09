@@ -22,12 +22,12 @@ function SendButton(event)
 function Equal()
 {
     const doc = document.getElementById("display").innerHTML
-    
+
     if (document.getElementById("display").innerHTML != "")
     {
         try {
             if (eval(doc) == Infinity)
-            { 
+            {
                 document.getElementById("data_message").innerHTML = ""
                 document.getElementById("data_message").style.color = "red"
                 document.getElementById("data_message").innerHTML = "Valor Máximo Excedido"
@@ -39,7 +39,7 @@ function Equal()
         }
         catch(err)
         {
-            
+
             if (err.name = "SyntaxError" || "TypeError")
             {
                 document.getElementById("data_message").innerHTML = ""
@@ -54,7 +54,7 @@ function Equal()
                 document.getElementById("data_message").innerHTML = "Erro Desconhecido"
                 console.log(err.name)
             }
-    
+
         }
     }
     else
@@ -62,7 +62,7 @@ function Equal()
         return document.getElementById("display").innerHTML = ""
     }
 
-    
+
 }
 
 function Clear()
@@ -77,9 +77,7 @@ function ClearAll()
     document.getElementById("display").innerHTML = ""
 }
 
-$(document).ready(function(){
-	$.get('data/geral.json', function(data) {
-        JSON.parse(data);
-        console.log(data);
-	});
-});
+$('#calculator_historic > div').innerHTML = jLog.sintaxe;
+
+import './data/geral.json';
+console.log(jLog.sintaxe);

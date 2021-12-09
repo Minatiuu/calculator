@@ -61,7 +61,7 @@ aside#aside_box {/* Barra Lateral */
     #numbers > :first-child > *,
     #numbers > :last-child > * {/* Alteração na Primeira e na Última Linha */
         background: #151515;
-    } 
+    }
         #numbers > :first-child > *:hover,
         #numbers > :last-child > *:hover {/* Primeira e Última Linha Em Hover */
             background: #0c0c0c;
