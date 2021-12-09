@@ -76,10 +76,4 @@ function ClearAll()
     document.getElementById("data_message").innerHTML = ""
     document.getElementById("display").innerHTML = ""
 }
-
-$(document).ready(function(){
-	$.get('data/geral.json', function(data) {
-        JSON.parse(data);
-        console.log(data);
-	});
-});
+//test
