@@ -77,7 +77,4 @@ function ClearAll()
     document.getElementById("display").innerHTML = ""
 }
 
-$('#calculator_historic > div').innerHTML = jLog.sintaxe;
-
-import './data/geral.json';
-console.log(jLog.sintaxe);
+console.log();
