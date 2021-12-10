@@ -18,7 +18,23 @@ function SendButton(event)
     {
         document.getElementById("display").innerHTML = doc + key
     }
-    console.log(key)
+    else
+    {
+        switch(key)
+        {
+            case "Backspace":
+                Clear()
+                break;
+            case "Enter":
+                Equal()
+                break;
+            case "Delete":
+                ClearAll()
+                break;
+            default:
+                console.log(key)
+        }
+    }
 }
 
 function Equal()
