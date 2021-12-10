@@ -1,10 +1,11 @@
 "use strict"
+module.exports = './index.js';
 
 function SendInput(id)
 {
     const doc = document.getElementById("display").innerHTML
     const input_register = document.getElementById(id).innerHTML
-    document.getElementById("display").innerHTML = doc + input_register  
+    document.getElementById("display").innerHTML = doc + input_register
 }
 
 function SendButton(event)
@@ -76,5 +77,3 @@ function ClearAll()
     document.getElementById("data_message").innerHTML = ""
     document.getElementById("display").innerHTML = ""
 }
-
-console.log();
