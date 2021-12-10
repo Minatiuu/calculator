@@ -1,5 +1,6 @@
 "use strict"
-module.exports = './index.js';
+$(document).ready(function(){
+$.getJSON('./data/geral.json', function(data1){
 
 function SendInput(id)
 {
@@ -43,7 +44,6 @@ function Equal()
 
             if (err.name = "SyntaxError" || "TypeError")
             {
-                document.getElementById("data_message").innerHTML = ""
                 document.getElementById("data_message").style.color = "red"
                 document.getElementById("data_message").innerHTML = "Sintaxe Mal Formada"
                 console.log(err.name)
@@ -77,3 +77,9 @@ function ClearAll()
     document.getElementById("data_message").innerHTML = ""
     document.getElementById("display").innerHTML = ""
 }
+
+$("p").click(function(){
+    $(this).html(data1.jLog.sintaxe);
+});
+});
+});
