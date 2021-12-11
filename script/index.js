@@ -8,6 +8,12 @@ $('.numbers_row > button').click(function(){
     $('#display').html(doc + input_register)
 });
 
+$('.flex_divisor > button').click(function(){
+    const doc = $('#display').html()
+    const input_register = $('#' + this.id).html()
+    $('#display').html(doc + input_register)
+});
+
 $(document).keydown(function(){
     const doc = $('#display').html()
     const key = event.key
@@ -22,11 +28,7 @@ $(document).keydown(function(){
 $('#number_equal').click(function(){
     const doc = $('#display').html()
 
-    if ($('#display').html(""))
-    {
-        $('#display').html("")
-    }
-    else
+    if (document.getElementById("display").innerHTML != "")
     {
         try {
             if (eval(doc) == Infinity)
@@ -58,7 +60,11 @@ $('#number_equal').click(function(){
             }
 
         }
-
+        
+    }
+    else
+    {
+        $('#display').html("")
     }
 });
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +17,7 @@
     <script src="node_modules/ajax/lib/ajax.js"></script>
     <script src="exec.js"></script>
 </head>
-<body onkeydown="SendButton(event)">
+<body>
     <aside id="aside_box">
         <nav>
             <section id="nav_top">
@@ -108,9 +109,11 @@
                         </div>
                     </div>
                     <div id="numbers" class="flex_divisor">
-                        <div id="numbers_row_four" class="not_print">
+                        <div id="numbers_row_four" class="numbers_row">
                             <button id="number_clearall">CE</button>
                             <button id="number_clear">C</button>
+                            <button id="number_left_parenth">(</button>
+                            <button id="number_right_parenth">)</button>
                         </div>
                         <div class="numbers_row">
                             <button id="number_7">7</button>
@@ -130,8 +133,7 @@
                         <div class="numbers_row">
                             <button id="number_0">0</button>
                             <button id="number_point">.</button>
-                            <button id="number_left_parenth">(</button>
-                            <button id="number_right_parenth">)</button>
+                            <button id="number_equal">=</button>
                         </div>
                     </div>
                     <div id="simp_operations" class="flex_divisor">
@@ -140,6 +142,7 @@
                         <button id="sop_divide">/</button>
                         <button id="sop_multiplic">*</button>
                         <button id="percentage">%</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -153,3 +156,5 @@
     </main>
 </body>
 </html>
+
+                        
