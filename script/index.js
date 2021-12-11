@@ -1,6 +1,4 @@
 "use strict"
-$(document).ready(function(){
-$.getJSON('./data/geral.json', function(data1){
 
 function SendInput(id)
 {
@@ -78,8 +76,3 @@ function ClearAll()
     document.getElementById("display").innerHTML = ""
 }
 
-$("p").click(function(){
-    $(this).html(data1.jLog.sintaxe);
-});
-});
-});

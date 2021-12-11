@@ -1,4 +1,3 @@
-const json1 = require('./data/geral.json');
 const fs = require('fs');
 const express = require('express');
 const app = express();
