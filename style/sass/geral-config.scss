@@ -21,6 +21,19 @@ body {
   height: 100%;
 }
 
+.not_print {
+  /* Elementos que não devem ser printados */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 23.33%;
+}
+
+.not_print > * {
+  /* Elementos que não devem ser printados */
+  width: 33.3%;
+}
+
 .numbers_row {
   /* Linha de Números */
   display: flex;
