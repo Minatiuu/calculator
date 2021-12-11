@@ -1,80 +1,117 @@
+@charset "UTF-8";
 /*
 @author: Minatiuu
 */
 :root {
-    --p-color: #333;
+  --p-color: #333;
 }
+
 ::selection {
-    background: #0d0;
-    color: #000;
-    text-shadow: 0px 0px 2px #0006;
+  background: #0d0;
+  color: #000;
+  text-shadow: 0px 0px 2px #0006;
 }
+
 /* Geral */
-* {/* Cor Padrão do Texto */
-    color: #eee;
+* {
+  /* Cor Padrão do Texto */
+  color: #eee;
 }
+
 /* Classes */
-.flex_divisor button {/* Botões */
-    background: #333;
-    border: 0px;
-    font: 24px 'Ubuntu', sans-serif;
-    transition: background 0.2s;
+.flex_divisor button {
+  /* Botões */
+  background: #333;
+  border: 0px;
+  font: 24px "Ubuntu", sans-serif;
+  transition: background 0.2s;
 }
-    .flex_divisor button:hover {
-        background: #262626;
-    }
+
+.flex_divisor button:hover {
+  background: #262626;
+}
+
 /* Declarações */
-#geral_flex_box {/* Página Principal */
-    background: #111;
-    z-index: 1;
-    background: url(../src/wallpaper-1.jpeg) no-repeat fixed center;
+#geral_flex_box {
+  /* Página Principal */
+  background: #111;
+  z-index: 1;
+  background: url(../src/wallpaper-1.jpeg) no-repeat fixed center;
 }
-aside#aside_box {/* Barra Lateral */
-    border-left: 1px solid #0f0;
-    border-right: 1px solid #0f0;
-    background: #000;
-    box-shadow: 0px 0px 15px #0009;
-    z-index: 3;
+
+aside#aside_box {
+  /* Barra Lateral */
+  border-left: 1px solid #0f0;
+  border-right: 1px solid #0f0;
+  background: #000;
+  box-shadow: 0px 0px 15px #0009;
+  z-index: 3;
 }
-#cabeçalho {/* Cabeçalho */
-    background: #050505;
+
+#cabeçalho {
+  /* Cabeçalho */
+  background: #050505;
 }
-#calculator_box {/*  */
-    background: radial-gradient(#4443, #4447, #444a);
+
+#calculator_box {
+  /*  */
+  background: radial-gradient(#4443, #4447, #444a);
 }
-#calculator_box > div {/* Caixa da Calculadora */
-    background: #252525;
-    box-shadow: 0px 0px 15px #0009;
+
+#calculator_box > div {
+  /* Caixa da Calculadora */
+  background: #252525;
+  box-shadow: 0px 0px 15px #0009;
 }
-    #data_message > div {
-        color: #777;
-    }
-    #data_historic > div {
-        color: #999;
-    }
-    #cop_grid > :nth-child(1n+26) > button {
-        background: #151515;
-    }
-        #cop_grid > :nth-child(1n+26):hover > button {
-            background: #0c0c0c;
-        }
-    #numbers > :first-child > *,
-    #numbers > :last-child > * {/* Alteração na Primeira e na Última Linha */
-        background: #151515;
-    }
-        #numbers > :first-child > *:hover,
-        #numbers > :last-child > *:hover {/* Primeira e Última Linha Em Hover */
-            background: #0c0c0c;
-        }
-        #numbers > :last-child > :last-child {/* Botão de Resultado */
-            background: #0b0;
-        }
-            #numbers > :last-child > :last-child:hover {/* Botão de Resultado em Hover */
-                background: #090;
-            }
-    #calculator_historic {
-        border-left: 1px solid #444;
-    }
-        #calculator_historic > div {
-            color: #777;
-        }
+
+#data_message > div {
+  color: #777;
+}
+
+#data_historic > div {
+  color: #999;
+}
+
+#cop_grid > :nth-child(1n+26) > button {
+  background: #151515;
+}
+
+#cop_grid > :nth-child(1n+26):hover > button {
+  background: #0c0c0c;
+}
+
+#numbers > :first-child > *,
+#numbers > :last-child > * {
+  /* Alteração na Primeira e na Última Linha */
+  background: #151515;
+}
+
+#numbers > :first-child > *:hover,
+#numbers > :last-child > *:hover {
+  /* Primeira e Última Linha Em Hover */
+  background: #0c0c0c;
+}
+
+#numbers > :last-child > :last-child {
+  /* Botão de Resultado */
+  background: #0b0;
+}
+
+#numbers > :last-child > :last-child:hover {
+  /* Botão de Resultado em Hover */
+  background: #090;
+}
+
+#numbers > :last-child > :last-child:active {
+  background: #070;
+}
+
+#calculator_historic {
+  border-left: 1px solid #444;
+}
+
+#calculator_historic > div {
+  color: #777;
+}
+
+/*# sourceMappingURL=dark-theme.css.map */

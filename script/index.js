@@ -1,6 +1,8 @@
 "use strict"
+$(document).ready(function() {
+$.getJSON('../data/geral.json', function(data){
 
-function SendInput(id)
+    function SendInput(id)
 {
     const doc = document.getElementById("display").innerHTML
     const input_register = document.getElementById(id).innerHTML
@@ -76,3 +78,5 @@ function ClearAll()
     document.getElementById("display").innerHTML = ""
 }
 
+});
+});
