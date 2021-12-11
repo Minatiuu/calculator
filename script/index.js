@@ -24,20 +24,20 @@ $('#number_equal').click(function(){
 
     if ($('#display').html(""))
     {
-        document.getElementById("display").innerHTML = ""
+        $('#display').html("")
     }
     else
     {
         try {
             if (eval(doc) == Infinity)
             {
-                document.getElementById("data_message").innerHTML = ""
+                $('#display').html("")
                 document.getElementById("data_message").style.color = "red"
-                document.getElementById("data_message").innerHTML = "Valor Máximo Excedido"
+                $('#data_message').html("Valor Máximo Excedido")
             }
             else
             {
-                document.getElementById("display").innerHTML = eval(doc)
+                $('#display').html(eval(doc))
             }
         }
         catch(err)
@@ -46,14 +46,14 @@ $('#number_equal').click(function(){
             if (err.name = "SyntaxError" || "TypeError")
             {
                 document.getElementById("data_message").style.color = "red"
-                document.getElementById("data_message").innerHTML = "Sintaxe Mal Formada"
+                $('#data_message').html("Sintaxe Mal Formada")
                 console.log(err.name)
             }
             else
             {
-                document.getElementById("data_message").innerHTML = ""
+                $('#data_message').html("")
                 document.getElementById("data_message").style.color = "red"
-                document.getElementById("data_message").innerHTML = "Erro Desconhecido"
+                $('#data_message').html("Erro Desconhecido")
                 console.log(err.name)
             }
 
