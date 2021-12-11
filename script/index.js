@@ -2,30 +2,31 @@
 $(document).ready(function() {
 $.getJSON('../data/geral.json', function(data){
 
-    function SendInput(id)
-{
-    const doc = document.getElementById("display").innerHTML
-    const input_register = document.getElementById(id).innerHTML
-    document.getElementById("display").innerHTML = doc + input_register
-}
+$('.numbers_row > button').click(function(){
+    const doc = $('#display').html()
+    const input_register = $('#' + this.id).html()
+    $('#display').html(doc + input_register)
+});
 
-function SendButton(event)
-{
-    const doc = document.getElementById("display").innerHTML
+$(document).keydown(function(){
+    const doc = $('#display').html()
     const key = event.key
     const accepted_keys = ["0","1","2","3","4","5","6","7","8","9","-","+","=","(",")","*","%"]
     if (accepted_keys.includes(key))
     {
-        document.getElementById("display").innerHTML = doc + key
+        $('#display').html(doc + key)
     }
     console.log(key)
-}
+});
 
-function Equal()
-{
-    const doc = document.getElementById("display").innerHTML
+$('#number_equal').click(function(){
+    const doc = $('#display').html()
 
-    if (document.getElementById("display").innerHTML != "")
+    if ($('#display').html(""))
+    {
+        document.getElementById("display").innerHTML = ""
+    }
+    else
     {
         try {
             if (eval(doc) == Infinity)
@@ -57,26 +58,19 @@ function Equal()
             }
 
         }
+
     }
-    else
-    {
-        return document.getElementById("display").innerHTML = ""
-    }
+});
 
+$('#number_clear').click(function(){
+    const doc = $('#display').html()
+    $('#display').html(doc.slice(0,-1))
+});
 
-}
-
-function Clear()
-{
-    const doc = document.getElementById("display").innerHTML
-    document.getElementById("display").innerHTML = doc.slice(0,-1)
-}
-
-function ClearAll()
-{
-    document.getElementById("data_message").innerHTML = ""
-    document.getElementById("display").innerHTML = ""
-}
+$('#number_clearall').click(function(){
+    $('#data_message').html("")
+    $('#display').html("")
+});
 
 });
 });
