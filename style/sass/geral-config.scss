@@ -1,7 +1,9 @@
-@charset "UTF-8";
 /*
 @author: Minatiuu
 */
+@charset "UTF-8";
+@import "./variables.scss";
+
 /* Geral */
 * {
   /* Aplicação do Border-Sizing geral */
@@ -227,5 +229,3 @@ main#geral_flex_box {
 }
 
 /*# sourceMappingURL=geral-config.scss.map */
-
-/*# sourceMappingURL=geral-config.css.map */

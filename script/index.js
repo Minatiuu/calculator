@@ -1,8 +1,8 @@
 "use strict"
-$(document).ready(function(){
-$.getJSON('./data/geral.json', function(data1){
+$(document).ready(function() {
+$.getJSON('../data/geral.json', function(data){
 
-function SendInput(id)
+    function SendInput(id)
 {
     const doc = document.getElementById("display").innerHTML
     const input_register = document.getElementById(id).innerHTML
@@ -18,23 +18,7 @@ function SendButton(event)
     {
         document.getElementById("display").innerHTML = doc + key
     }
-    else
-    {
-        switch(key)
-        {
-            case "Backspace":
-                Clear()
-                break;
-            case "Enter":
-                Equal()
-                break;
-            case "Delete":
-                ClearAll()
-                break;
-            default:
-                console.log(key)
-        }
-    }
+    console.log(key)
 }
 
 function Equal()
@@ -94,8 +78,5 @@ function ClearAll()
     document.getElementById("display").innerHTML = ""
 }
 
-$("p").click(function(){
-    $(this).html(data1.jLog.sintaxe);
-});
 });
 });
