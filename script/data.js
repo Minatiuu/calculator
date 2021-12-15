@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    $.getJSON('../data/geral.json', function(data){
-        $('#calculator_historic > div').html("");
-
-    });
+    const data1 = $.getJSON('../data/geral.json');
+    $('#calculator_historic > div').html(data1.jLog.sintaxe);
+    console.log("data1.jLog.sintaxe");
 });
