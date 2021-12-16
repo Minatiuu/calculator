@@ -1,4 +1,4 @@
 $(document).ready(function() {
-    $.getScript('./index.js');
-    $.getScript('./data.js');
+    $.getScript('./script/index.js');
+    $.getScript('./script/data.js');
 });

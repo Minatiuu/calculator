@@ -1,5 +1,9 @@
 $(document).ready(function() {
-    const data1 = $.getJSON('../data/geral.json');
-    $('#calculator_historic > div').html(data1.jLog.sintaxe);
-    console.log("data1.jLog.sintaxe");
+    $.getJSON('../data/geral.json', function(data){
+        $('#calculator_historic > div').html("");
+        $('#number_1').click(function() {
+            window.open('../page/test.html', 'Teste',
+            'width=500, height=300, resizable=on');
+        });
+    });
 });

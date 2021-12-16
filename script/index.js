@@ -1,6 +1,6 @@
 "use strict"
 $(document).ready(function() {
-    $.getJSON('../data/geral.json', function(data){
+    $.getJSON('../data/geral.json', function(data1){
         //Get and Print texts of buttons with a class "numbers_row"
         $('.numbers_row > button').click(function(){
             const doc = $('#display').html()
@@ -22,7 +22,7 @@ $(document).ready(function() {
                 Clear()
             }
         });
-        //Get and Print Operators texts 
+        //Get and Print Operators texts
         $('.flex_divisor > button').click(function(){
             const doc = $('#display').html()
             const input_register = $('#'+this.id).html()
@@ -55,7 +55,7 @@ $(document).ready(function() {
             }
             console.log(key) //TEMP
         }
-        
+
         //Transform the string of display in a instruction
         function Equal()
         {
@@ -70,7 +70,7 @@ $(document).ready(function() {
                     {
                         $('#data_message').html("")
                         $('#data_message').css("color","red")
-                        $('#data_message').html("Valor Máximo Excedido")
+                        $('#data_message').html()
                     }
                     else
                     {
@@ -82,19 +82,18 @@ $(document).ready(function() {
                     //Error Logs
                     if (err.name = "SyntaxError" || "TypeError")
                     {
-                        $('#data_message').html("")
+                        $('#data_message').html(data1.jLog.maxValue)
                         $('#data_message').css("color","red")
-                        $('#data_message').html("Sintaxe Mal Formada")
+                        $('#data_message').html("")
                         console.log(err.name) //TEMP
                     }
                     else
                     {
                         $('#data_message').html("")
                         $('#data_message').css("color","red")
-                        $('#data_message').html("Erro Desconhecido")
+                        $('#data_message').html(data1.jLog.unknownError)
                         console.log(err.name) //TEMP
                     }
-        
                 }
             }
             else
@@ -102,24 +101,22 @@ $(document).ready(function() {
                 //If display is a empty string, just return nothing
                 return
             }
-        
-        
         }
-        
+
         //Delete the last charactere of a equation
         function Clear()
         {
             const doc = $('#display').html()
             $('#display').html(doc.slice(0,-1))
         }
-        
+
         //Delete error logs and the display
         function ClearAll()
         {
             $('#data_message').html("")
             $('#display').html("")
         }
-        
+
         //Call the function if a key of keyboard is pressed
         $(document).keydown(function(){
             SendButton()
@@ -135,6 +132,6 @@ $(document).ready(function() {
         //Call the function if a CE button is pressed
         $('#number_clearall').click(function(){
             ClearAll()
-        });        
+        });
     });
 });
