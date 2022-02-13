@@ -1,0 +1,46 @@
+[33m[nodemon] 2.0.15[39m
+[33m[nodemon] reading config ./nodemon.json[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] or send SIGHUP to 364658 to restart[39m
+[33m[nodemon] ignoring: ./.git/**/* node_modules/**/node_modules[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node script/server.js`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 364696[39m
+[33m[nodemon] exiting[39m
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:191:14
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:520:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+[33m[nodemon] 2.0.15[39m
+[33m[nodemon] reading config ./nodemon.json[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] or send SIGHUP to 67552 to restart[39m
+[33m[nodemon] ignoring: ./.git/**/* node_modules/**/node_modules[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node script/server.js`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 67593[39m
+[33m[nodemon] exiting[39m
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:191:14
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:520:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
