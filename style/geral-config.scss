@@ -5,53 +5,46 @@
 @import "./_variables.scss";
 
 /* Geral */
-* {
-	/* Aplicação do Border-Sizing geral */
+* {/* Aplicação do Border-Sizing geral */
 	box-sizing: border-box;
 }
 
-body {
-	/* Remoção da Margem Padrão */
+body {/* Remoção da Margem Padrão */
 	margin: 0px;
 }
 
 /* Classes */
-.flex_divisor {
-	/* Caixa Divisora das Sessões */
+.flex_divisor {/* Caixa Divisora das Sessões */
 	height: 100%;
 }
 
-.numbers_row {
-	/* Linha de Números */
+.numbers_row {/* Linha de Números */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	height: 23.33%;
 }
 
-.numbers_row > * {
-	/* Largura de cada Botão (exceto da primeira e última linha) */
+.numbers_row > * {/* Largura de cada Botão (exceto da primeira e última linha) */
 	width: 33.3%;
 }
 
 .nav_icon {
-	height: 36px;
+	height: 34px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 /* Declarações */
-body {
-	/* Corpo da Página */
+body {/* Corpo da Página */
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	flex-direction: row;
 }
 
-aside#aside_box {
-	/* Barra Lateral */
+aside#aside_box {/* Barra Lateral */
 	width: 37px;
 }
 
@@ -62,7 +55,7 @@ nav {
 }
 
 section#nav_top {
-	height: 36px;
+	height: 34px;
 }
 
 section#nav_top > div > div {
@@ -70,23 +63,25 @@ section#nav_top > div > div {
 }
 
 section#nav_mid {
-	height: calc(100% - 72px);
+	height: calc(100% - 68px);
 }
 
 section#nav_bottom {
-	height: 36px;
+	height: 34px;
 }
-
-main#geral_flex_box {
-	/* Página Principal do Conteúdo */
+	section#nav_bottom > div > div.nav_icon > div {
+		width: 34px;
+		height: 34px;
+		background: url('../src/White_Space_Normal.png') cover no-repeat;
+	}
+main#geral_flex_box {/* Página Principal do Conteúdo */
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
 
-#cabeçalho {
-	/* Cabeçalho da Página */
+#cabeçalho {/* Cabeçalho da Página */
 	height: 36px;
 	width: 100%;
 	display: flex;
@@ -94,22 +89,19 @@ main#geral_flex_box {
 	align-items: center;
 }
 
-#cabeçalho > div {
-	/* Texto do Cabeçalho */
+#cabeçalho > div {/* Texto do Cabeçalho */
 	font: 26px "Ubuntu-Medium", sans-serif;
 	user-select: none;
 }
 
-#calculator_box {
-	/* Caixa da Calculadora */
+#calculator_box {/* Caixa da Calculadora */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: calc(100% - 36px);
 }
 
-#calculator_box > div {
-	/* Calculadora */
+#calculator_box > div {/* Calculadora */
 	min-width: 900px;
 	max-width: 1200px;
 	width: 90%;
@@ -119,14 +111,12 @@ main#geral_flex_box {
 	display: flex;
 }
 
-#calculator {
-	/* Espaço da Calculadora */
+#calculator {/* Espaço da Calculadora */
 	height: 100%;
 	width: 75%;
 }
 
-#geral_data {
-	/* Display da Conta */
+#geral_data {/* Display da Conta */
 	height: 18%;
 	padding: 0.5% 1%;
 }
@@ -158,15 +148,13 @@ main#geral_flex_box {
 	font: 20px "Ubuntu-Regular", sans-serif;
 }
 
-#operations_divisor {
-	/* Display dos Números e Operações */
+#operations_divisor {/* Display dos Números e Operações */
 	height: 82%;
 	display: flex;
 	flex-direction: row;
 }
 
-#complex_operations {
-	/* Operações Complexas */
+#complex_operations {/* Operações Complexas */
 	width: 54%;
 }
 
@@ -186,32 +174,27 @@ main#geral_flex_box {
 	width: 100%;
 }
 
-#numbers {
-	/* Números */
+#numbers {/* Números */
 	width: 36%;
 }
 
 #numbers > :first-child,
-#numbers > :last-child {
-	/* Alteração na Primeira e na Última Linha */
+#numbers > :last-child {/* Alteração na Primeira e na Última Linha */
 	height: 15%;
 }
 
-#simp_operations {
-	/* Operações Simples */
+#simp_operations {/* Operações Simples */
 	width: 10%;
 	display: flex;
 	flex-direction: column;
 }
 
-#simp_operations > * {
-	/* Botões das Operações Simples */
+#simp_operations > * {/* Botões das Operações Simples */
 	width: 100%;
 	height: 20%;
 }
 
-#calculator_historic {
-	/* Histórico de Operações */
+#calculator_historic {/* Histórico de Operações */
 	width: 25%;
 	padding: 1% 0.5%;
 	overflow-x: hidden;
