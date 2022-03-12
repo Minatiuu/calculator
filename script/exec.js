@@ -1,4 +1,5 @@
-$(document).ready(function() {
-    $.getScript('./index.js');
-    $.getScript('./data.js');
-});
+import getData from "./data.js";
+import startCalculator from "./index.js";
+
+startCalculator();
+getData();
