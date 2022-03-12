@@ -4,9 +4,10 @@ export default function startCalculator() {
 const data1 = getJson('./data/geral.json')
 
 //Get and Print texts of buttons with a class "numbers_row"
-document.querySelector('.numbers_row > button').addEventListener('click', (me) => {
+$('.numbers_row > button').on('click', (me) => {
     //Not print some buttons and execute some functions
     const inputRegister = document.getElementById(me.target.id).innerText
+    console.log(me.target.id)
 
     if (inputRegister != "C"){
         if (inputRegister != "="){
@@ -20,10 +21,10 @@ document.querySelector('.numbers_row > button').addEventListener('click', (me) =
     }
 })
     //Get and Print Operators texts 
-    document.querySelector('.flex_divisor > button').addEventListener('click', (me) => {
-            const display = document.getElementById('display')
-            const inputRegister = document.getElementById(me.target.id).innerHTML
-            document.getElementById('display').innerHTML = display + inputRegister
+    $('.flex_divisor > button').on('click', (me) => {
+            const inputRegister = document.getElementById(me.target.id).innerText
+            console.log(me.target.id)
+            document.getElementById('display').innerHTML += inputRegister
         })
         
         //Call the function if a key of keyboard is pressed
@@ -74,7 +75,7 @@ function equal(){
     const display = document.getElementById('display').innerHTML
 
     //Verify if the display is a empty string
-    if (document.getElementById('display').innerHTML === ''){
+    if (document.getElementById('display').innerHTML !== ''){
         const dataMessage = document.getElementById('data_message')
         try {
             //Verify if the equation is Infinity
