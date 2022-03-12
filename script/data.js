@@ -1,4 +1,4 @@
-import getJson from "./getJson.js"
+import getJson from "../modules/getJson.js"
 
 export default async function getData(){
     const data1 = await getJson('/data/geral.json')
