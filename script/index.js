@@ -1,4 +1,3 @@
-import getJson from "/modules/getJson.js"
 import operators from "/modules/operators.js"
 import input from "/modules/input.js"
 
@@ -6,8 +5,6 @@ const operatorsVar = operators()
 const inputVar = input()
 
 export default function startCalculator() {
-
-const data1 = getJson('./data/geral.json')
 
 //Get and Print texts of buttons with a class "numbers_row"
 $('.numbers_row > button').on('click', (me) => {

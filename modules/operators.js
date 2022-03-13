@@ -1,6 +1,10 @@
+import getJson from "./getJson.js"
+
 export default function operators(){
+    
     //Transform the string of display in a instruction
-    function equal(){
+    async function equal(){
+        const jsonData = await getJson('./data/geral.json')
         const display = document.getElementById('display').innerHTML
 
         //Verify if the display is a empty string
@@ -11,7 +15,7 @@ export default function operators(){
                 if (eval(display) == Infinity){
                     dataMessage.innerHTML = ''
                     dataMessage.style.color = 'red'
-                    dataMessage.innerHTML = "Valor Máximo Excedido"
+                    dataMessage.innerHTML = jsonData.jLog.maxValue
                 }
                 else{
                     document.getElementById('display').innerHTML = eval(display)
@@ -22,13 +26,11 @@ export default function operators(){
                 if (err.name = "SyntaxError" || "TypeError"){
                     dataMessage.innerHTML = ""
                     dataMessage.style.color = "red"
-                    dataMessage.innerHTML = "Sintaxe Mal Formada"
-                    console.log(err.name) //TEMP
+                    dataMessage.innerHTML = jsonData.jLog.sintaxe
                 } else{
                     dataMessage.innerHTML = ''
                     dataMessage.style.color = "red"
-                    dataMessage.innerHTML = "Erro Desconhecido"
-                    console.log(err.name) //TEMP
+                    dataMessage.innerHTML = jsonData.jLog.unknown
                 }
             }
         } else{
