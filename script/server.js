@@ -1,11 +1,9 @@
-const fs = require('fs');
 const express = require('express');
 const app = express();
-const nodemon = require('nodemon');
 
-app.get('../index.html',
-function requestHandler(req, res) {
-    re.writeHead(200, {'Content-Type': 'text/html'});
-    res.end();
-}).listen(8081);
+const port = 80;
+
 app.use(express.static('./'));
+app.listen(port, function(){
+    console.log('listening on port: ' + port);
+});

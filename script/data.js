@@ -1,9 +1,11 @@
-$(document).ready(function() {
-    $.getJSON('../data/geral.json', function(data){
-        $('#calculator_historic > div').html("");
-        $('#number_1').click(function() {
-            window.open('../page/test.html', 'Teste',
-            'width=500, height=300, resizable=on');
-        });
-    });
-});
+import getJson from "../modules/getJson.js"
+
+export default async function getData(){
+    const data1 = await getJson('/data/geral.json')
+
+    setTimeout(function() {
+        console.log(data1);
+        document.querySelector('#calculator_historic > div').innerHTML = data1.jLog.sintaxe;
+        console.log(data1.jLog.sintaxe);
+    }, 100)
+}
