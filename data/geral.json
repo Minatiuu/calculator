@@ -4,7 +4,7 @@
     "expression": "Expressão mal formada.",
     "maxValue": "Valor máximo excedido.",
     "maxChar": "Valor máximo de caracteres excedido.",
-    "unknow": "Erro Desconhecido"
+    "unknownError": "Erro desconhecido"
   },
   "tests": {
     "calculation": "((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5",
