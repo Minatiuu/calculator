@@ -12,15 +12,10 @@ $('.numbers_row > button').on('click', (me) => {
     const inputRegister = document.getElementById(me.target.id).innerText
     console.log(me.target.id)
 
-    if (inputRegister != "C"){
-        if (inputRegister != "="){
-            document.getElementById('display').innerHTML += inputRegister
-            console.log(inputRegister)
-        } else{
-            operatorsVar.equal()
-        }
+    if (inputRegister != "C" && inputRegister != "="){
+        document.getElementById('display').innerHTML += inputRegister
     } else{
-        operatorsVar.clear()
+        return
     }
 })
 
