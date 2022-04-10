@@ -5,14 +5,11 @@ import { exec } from 'child_process';
 import express from 'express';
 const app = express();
 
-const port = 8080;
-const defaults = {
-    shell: '/bin/sh'
-}
+const PORT = 8080;
 
 app.use(express.static('./'));
-app.listen(port, function(){
-    console.log('listening on port: ' + port);
+app.listen(PORT, function(){
+    console.log('listening on port: ' + PORT);
 });
 
 sass.transpile();
