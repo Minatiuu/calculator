@@ -73,7 +73,7 @@ body {
 }
 
 .nav_icon {
-  height: 34px;
+  height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +100,7 @@ nav {
 }
 
 section#nav_top {
-  height: 34px;
+  height: 36px;
 }
 
 section#nav_top > div > div {
@@ -108,17 +108,11 @@ section#nav_top > div > div {
 }
 
 section#nav_mid {
-  height: calc(100% - 68px);
+  height: calc(100% - 72px);
 }
 
 section#nav_bottom {
-  height: 34px;
-}
-
-section#nav_bottom > div > div.nav_icon > div {
-  width: 34px;
-  height: 34px;
-  background: url("../src/White_Space_Normal.png") cover no-repeat;
+  height: 36px;
 }
 
 main#geral_flex_box {
