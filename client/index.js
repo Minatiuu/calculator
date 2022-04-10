@@ -14,18 +14,18 @@ $('.numbers_row > button').on('click', (me) => {
 
     if (inputRegister != "C" && inputRegister != "="){
         document.getElementById('display').innerHTML += inputRegister
-    } else{
+    } else {
         return
     }
 })
 
-//Get and Print Operators texts 
+//Get and Print Operators texts
 $('.flex_divisor > button').on('click', (me) => {
         const inputRegister = document.getElementById(me.target.id).innerText
         console.log(me.target.id)
         document.getElementById('display').innerHTML += inputRegister
     })
-    
+
     //Call the function if a key of keyboard is pressed
     document.addEventListener('keydown', (keyEvent) => {
         inputVar.sendButton(keyEvent)

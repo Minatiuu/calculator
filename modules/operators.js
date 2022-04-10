@@ -1,10 +1,10 @@
 import getJson from "./getJson.js"
 
 export default function operators(){
-    
+
     //Transform the string of display in a instruction
     async function equal(){
-        const jsonData = await getJson('./data/geral.json')
+        const jsonData = await getJson('../database/data/geral.json')
         const display = document.getElementById('display').innerHTML
 
         //Verify if the display is a empty string
@@ -45,7 +45,7 @@ export default function operators(){
         document.getElementById('display').innerHTML = (display.slice(0,-1))
     }
 
-    //Delete error logs and the display 
+    //Delete error logs and the display
     function clearAll(){
         document.getElementById('data_message').innerHTML = '';
         document.getElementById('display').innerHTML = '';

@@ -1,7 +1,7 @@
-import getJson from "../modules/getJson.js"
+import getJson from "/modules/getJson.js"
 
 export default async function getData(){
-    const data1 = await getJson('/data/geral.json')
+    const data1 = await getJson('/database/data/geral.json')
 
     setTimeout(function() {
         console.log(data1);
