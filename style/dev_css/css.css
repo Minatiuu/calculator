@@ -1,0 +1,409 @@
+@charset "UTF-8";
+/*
+@author: Minatiuu
+*/
+/* Cor Principal Verde */
+/* Cor Principal Part-Dark */
+/* Cor Secundária Part-Dark */
+/* CORES DE TEXTO */
+/* Cor Principal do Texto */
+/* Cor Secundária do Texto */
+/* Mixin's */
+/* UBUNTU */
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Bold-Italic;
+  src: url(../fonts/Ubuntu/Ubuntu-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Italic;
+  src: url(../fonts/Ubuntu/Ubuntu-Italic.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Light-Italic;
+  src: url(../fonts/Ubuntu/Ubuntu-LightItalic.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Medium-Italic;
+  src: url(../fonts/Ubuntu/Ubuntu-MediumItalic.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+/* Geral */
+* {
+  /* Aplicação do Border-Sizing geral */
+  box-sizing: border-box;
+}
+
+body {
+  /* Remoção da Margem Padrão */
+  margin: 0px;
+}
+
+/* Classes */
+.flex_divisor {
+  /* Caixa Divisora das Sessões */
+  height: 100%;
+}
+
+.numbers_row {
+  /* Linha de Números */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 23.33%;
+}
+
+.numbers_row > * {
+  /* Largura de cada Botão (exceto da primeira e última linha) */
+  width: 33.3%;
+}
+
+.nav_icon {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Declarações */
+body {
+  /* Corpo da Página */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+aside#aside_box {
+  /* Barra Lateral */
+  width: 37px;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section#nav_top {
+  height: 36px;
+}
+
+section#nav_top > div > div {
+  font: 25px "Ubuntu-Bold";
+}
+
+section#nav_mid {
+  height: calc(100% - 72px);
+}
+
+section#nav_bottom {
+  height: 36px;
+}
+
+main#geral_flex_box {
+  /* Página Principal do Conteúdo */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#cabeçalho {
+  /* Cabeçalho da Página */
+  height: 36px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cabeçalho > div {
+  /* Texto do Cabeçalho */
+  font: 26px "Ubuntu-Medium", sans-serif;
+  user-select: none;
+}
+
+#calculator_box {
+  /* Caixa da Calculadora */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 36px);
+}
+
+#calculator_box > div {
+  /* Calculadora */
+  min-width: 900px;
+  max-width: 1200px;
+  width: 90%;
+  min-height: 400px;
+  max-height: 600px;
+  height: 90%;
+  display: flex;
+}
+
+#calculator {
+  /* Espaço da Calculadora */
+  height: 100%;
+  width: 75%;
+}
+
+#geral_data {
+  /* Display da Conta */
+  height: 18%;
+  padding: 0.5% 1%;
+}
+
+#geral_data > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#geral_data > div:not(:first-child) > div {
+  text-align: right;
+  user-select: none;
+}
+
+#data_message {
+  height: 20%;
+  font: 18px "Ubuntu-Light", sans-serif;
+}
+
+#data_display {
+  height: 50%;
+  font: 30px "Ubuntu-Bold", sans-serif;
+}
+
+#data_historic {
+  height: 30%;
+  height: 30%;
+  font: 20px "Ubuntu-Regular", sans-serif;
+}
+
+#operations_divisor {
+  /* Display dos Números e Operações */
+  height: 82%;
+  display: flex;
+  flex-direction: row;
+}
+
+#complex_operations {
+  /* Operações Complexas */
+  width: 54%;
+}
+
+#cop_grid {
+  display: grid;
+  grid-template-rows: 15% auto auto auto auto 15%;
+  height: 100%;
+  width: 100%;
+}
+
+#cop_grid > div#cop_conversions {
+  grid-area: 1/7/1/1;
+}
+
+#cop_grid button {
+  height: 100%;
+  width: 100%;
+}
+
+#numbers {
+  /* Números */
+  width: 36%;
+}
+
+#numbers > :first-child,
+#numbers > :last-child {
+  /* Alteração na Primeira e na Última Linha */
+  height: 15%;
+}
+
+#simp_operations {
+  /* Operações Simples */
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+#simp_operations > * {
+  /* Botões das Operações Simples */
+  width: 100%;
+  height: 20%;
+}
+
+#calculator_historic {
+  /* Histórico de Operações */
+  width: 25%;
+  padding: 1% 0.5%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#calculator_historic > div {
+  font: 15px "Ubuntu-Medium", sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 0.5%;
+  text-align: right;
+  scrollbar-width: thin;
+}
+
+/*
+@author: Minatiuu
+*/
+::selection {
+  /* Seleção */
+  background: #0b0;
+  color: #000;
+  text-shadow: 0px 0px 2px #0006;
+}
+
+/* Declarações Globais */
+* {
+  /* Cor Padrão do Texto */
+  color: #eee;
+}
+
+* {
+  /* Transição Padrão */
+  transition: 0.2s;
+}
+
+/* Classes */
+div.flex_divisor {
+  /* Divisor dos Displays */
+}
+div.flex_divisor button {
+  /* Botões */
+  background: #333;
+  border: 0px;
+  font: 24px "Ubuntu", sans-serif;
+}
+div.flex_divisor button:hover {
+  /* Botões ao Passar o Mouse */
+  background: #181818;
+  background: #111;
+}
+
+/* Declarações */
+aside#aside_box {
+  /* Barra Lateral */
+  border-left: 1px solid #0b0;
+  border-right: 1px solid #0b0;
+  background: #000;
+  z-index: 3;
+  /*  */
+  box-shadow: 0px 0px 15px #0009;
+}
+
+main#geral_flex_box {
+  /* Conteúdo */
+  z-index: 1;
+  background: url("../src/wallpaper-1.jpeg") no-repeat fixed center;
+}
+main#geral_flex_box header#cabeçalho {
+  /* Cabeçalho */
+  background: #050505;
+}
+main#geral_flex_box article#calculator_box {
+  /* Área da Calculadora */
+  background: radial-gradient(#4443, #4447, #444a);
+}
+main#geral_flex_box article#calculator_box > div {
+  /* Caixa da Calculadora */
+}
+main#geral_flex_box article#calculator_box > div {
+  /* Caixa da Calculadora */
+  background: #252525;
+  /*  */
+  box-shadow: 0px 0px 15px #0009;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator {
+  /* Seção dos Displays */
+  border: 1px solid transparent;
+  border-right: 1px solid #555;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator:hover {
+  border: 1px solid #070;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#geral_data {
+  /* Divisão do Display */
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#geral_data #data_message > div {
+  /* Display do Log */
+  color: #777;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#geral_data #data_historic > div {
+  /* Display da Última Operação */
+  color: #999;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor {
+  /* Divisor das Operações */
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#complex_operations > * > div:nth-child(1n+26) {
+  /* Barra Inferior */
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#complex_operations > * > div:nth-child(1n+26) > * {
+  background: #151515;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#complex_operations > * > div:nth-child(1n+26) > *:hover {
+  background: #0f0f0f;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#complex_operations > * > div:nth-child(1n+26) > *:active {
+  background: #090909;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :first-child > *,
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :last-child > * {
+  /* Barra Inferior e Superior */
+  background: #151515;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :first-child > *:hover,
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :last-child > *:hover {
+  background: #0f0f0f;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :first-child > *:active,
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :last-child > *:active {
+  background: #090909;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor #numbers > :last-child > :last-child {
+  /* Botão Equal */
+  background: #0b0;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor #numbers > :last-child > :last-child:hover {
+  background: #090;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor #numbers > :last-child > :last-child:active {
+  background: #070;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator_historic {
+  /* Seção do Histórico */
+  border: 1px solid transparent;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator_historic:hover {
+  border: 1px solid #070;
+}
+main#geral_flex_box article#calculator_box > div > section#calculator_historic > div {
+  color: #777;
+}
+
+/*# sourceMappingURL=geral-config.scss.map */
+
+/*# sourceMappingURL=css.css.map */
