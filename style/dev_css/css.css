@@ -234,10 +234,6 @@ main#geral_flex_box {
 
 #geral_data > div:not(:first-child) > div {
   text-align: right;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 #data_message {
@@ -326,19 +322,36 @@ main#geral_flex_box {
 #calculator_historic {
   /* Histórico de Operações */
   width: 25%;
-  padding: 1% 0.5%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  padding: 0.5% 0.5%;
+  overflow: auto;
 }
 
 #calculator_historic > div {
-  font: 15px 'Ubuntu-Medium', sans-serif;
+  font: 16px 'Ubuntu-Bold', sans-serif;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
   margin-bottom: 0.5%;
-  text-align: right;
   scrollbar-width: thin;
+  height: 99.9%;
+}
+
+#calculator_historic > div > div {
+  margin: 0.1875em 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#calculator_historic > div > div > div:first-child {
+  width: 2em;
+}
+
+#calculator_historic > div > div > div:first-child > span#historic_count {
+  text-align: left;
+}
+
+#calculator_historic > div > div > div:last-child {
+  text-align: right;
 }
 
 /* Tema */
@@ -391,8 +404,12 @@ div.flex_divisor button {
 
 div.flex_divisor button:hover {
   /* Botões ao Passar o Mouse */
-  background: #181818;
-  background: #111;
+  background: #292929;
+}
+
+div.flex_divisor button:active {
+  /* Botões ao Clicar */
+  background: #222;
 }
 
 /* Declarações */
@@ -471,7 +488,7 @@ main#geral_flex_box article#calculator_box > div > section#calculator div#operat
 }
 
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#complex_operations > * > div:nth-child(1n+26) > *:active {
-  background: #090909;
+  background: #150808;
 }
 
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :first-child > *,
@@ -487,7 +504,7 @@ main#geral_flex_box article#calculator_box > div > section#calculator div#operat
 
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :first-child > *:active,
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :last-child > *:active {
-  background: #090909;
+  background: #150808;
 }
 
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor #numbers > :last-child > :last-child {
@@ -512,7 +529,11 @@ main#geral_flex_box article#calculator_box > div > section#calculator_historic:h
   border: 1px solid #070;
 }
 
-main#geral_flex_box article#calculator_box > div > section#calculator_historic > div {
+main#geral_flex_box article#calculator_box > div > section#calculator_historic > div > div > div > span {
+  color: #aaa;
+}
+
+main#geral_flex_box article#calculator_box > div > section#calculator_historic > div > div > div > span#historic_count {
   color: #777;
 }
 /*# sourceMappingURL=css.css.map */

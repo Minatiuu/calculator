@@ -5,7 +5,6 @@ export default async function getData(){
 
     setTimeout(function() {
         console.log(data1);
-        document.querySelector('#calculator_historic > div').innerHTML = data1.jLog.sintaxe;
         console.log(data1.jLog.sintaxe);
     }, 100)
 }

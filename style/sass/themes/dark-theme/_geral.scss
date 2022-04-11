@@ -25,10 +25,13 @@ div.flex_divisor {/* Divisor dos Displays */
         background: $thirdColor;
         border: 0px;
         font: 24px 'Ubuntu', sans-serif;
-    }
-    button:hover {/* Botões ao Passar o Mouse */
-        background: $h-thirdColor;
-        background: $a-thirdColor;
+
+        &:hover {/* Botões ao Passar o Mouse */
+            background: $h-thirdColor;
+        }
+        &:active {/* Botões ao Clicar */
+            background: $a-thirdColor;
+        }
     }
 }
 
@@ -109,8 +112,13 @@ main#geral_flex_box {/* Conteúdo */
                         border: 1px solid $a-primaryColor;
                     }
 
-                > div {
-                    color: #777;
+                > div > div > div {
+                    > span {
+                        color: $txt-primaryColor;
+                    }
+                    > span#historic_count {
+                        color: $txt-secundColor;
+                    }
                 }
             }
         }
