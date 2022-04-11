@@ -1,4 +1,6 @@
 /* Geral */
+@import "variables";
+
 * {
 	/* Aplicação do Border-Sizing geral */
 	box-sizing: border-box;
@@ -60,7 +62,7 @@ section#nav_top {
 }
 
 section#nav_top > div > div {
-	font: 25px "Ubuntu-Bold";
+	font: 25px 'Ubuntu-Bold', sans-serif;
 }
 
 section#nav_mid {
@@ -90,7 +92,7 @@ main#geral_flex_box {
 
 #cabeçalho > div {
 	/* Texto do Cabeçalho */
-	font: 26px "Ubuntu-Medium", sans-serif;
+	font: 26px 'Ubuntu-Medium', sans-serif;
 	user-select: none;
 }
 
@@ -138,18 +140,18 @@ main#geral_flex_box {
 
 #data_message {
 	height: 20%;
-	font: 18px "Ubuntu-Light", sans-serif;
+	font: 18px 'Ubuntu-Light', sans-serif;
 }
 
 #data_display {
 	height: 50%;
-	font: 30px "Ubuntu-Bold", sans-serif;
+	font: 30px 'Ubuntu-Bold', sans-serif;
 }
 
 #data_historic {
 	height: 30%;
 	height: 30%;
-	font: 20px "Ubuntu-Regular", sans-serif;
+	font: 20px 'Ubuntu-Regular', sans-serif;
 }
 
 #operations_divisor {
@@ -213,7 +215,7 @@ main#geral_flex_box {
 }
 
 #calculator_historic > div {
-	font: 15px "Ubuntu-Medium", sans-serif;
+	font: 15px 'Ubuntu-Medium', sans-serif;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
