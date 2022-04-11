@@ -2,11 +2,16 @@
 @author: Minatiuu
 */
 @charset "UTF-8";
-@import "partials/variables";
-@import "partials/fonts";
 
-@import "partials/geral_config";
+/* Libs */
+@import "sass/lib/mixin";
 
-@import "partials/themes/dark-theme";
+/* Configurações */
+@import "sass/fonts";
+
+@import "sass/config";
+
+/* Tema */
+@import "sass/themes/dark-theme/geral";
 
 /*# sourceMappingURL=geral-config.scss.map */
