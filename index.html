@@ -7,10 +7,12 @@
     <meta name="keywords" content="Calculadora" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device, initial-scale=1.0"/>
-    <meta name="viewport" content="height-device, initial-sclae=1.0" />
-    <link rel="stylesheet" href="style/geral-config.css" /> <!-- Stylesheet das Configurações -->
-    <link rel="stylesheet" href="style/fonts.css" /> <!-- Stylesheet das Fontes -->
-    <link rel="stylesheet" href="style/dark-theme.css" /> <!-- Tema Padrão (Dark) -->
+    <meta name="viewport" content="height-device, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/css/css.min.css" /> <!-- Estilo Geral -->
+    <script src="node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="node_modules/socket.io/client-dist/socket.io.js" defer></script>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script type="module" src="client/js/exec.js" defer></script>
 </head>
 <body onkeypress="SendButton(event)">
     <aside id="aside_box">
@@ -23,12 +25,7 @@
             <section id="nav_mid">
                 <div class="nav_pos_box">
                     <div class="nav_icon">
-                        <a>X</a>
-                    </div>
-                    <div class="nav_box">
-                        <div>
-                            <div>aa</div>
-                        </div>
+                        <a></a>
                     </div>
                 </div>
             </section>
@@ -39,7 +36,7 @@
                     </div>
                     <div class="nav_box">
                         <div>
-                            <div>a</div>
+                            <div></div>
                         </div>
                     </div>
                 </div>
@@ -55,13 +52,13 @@
             <section id="calculator">
                 <div id="geral_data" class="flex_divisor">
                     <div id="data_message">
-                        <div>Expressão mal formada</div>
+                        <div></div>
                     </div>
                     <div id="data_display">
                         <div id="display"></div>
                     </div>
                     <div id="data_historic">
-                        <div>((10+2 * 3) - 2^5 * 51 / 19)</div>
+                        <div></div>
                     </div>
                 </div>
                 <div id="operations_divisor">
@@ -104,107 +101,48 @@
                     </div>
                     <div id="numbers" class="flex_divisor">
                         <div id="numbers_row_four" class="numbers_row">
-                            <button id="number_clearall" onclick="ClearAll()">CE</button>
-                            <button id="number_left_parenth" onclick="SendInput('number_left_parenth')">(</button>
-                            <button id="number_right_parenth" onclick="SendInput('number_right_parenth')">)</button>
-                            <button id="number_clear" onclick="Clear()">C</button>
+                            <button id="number_clearall">CE</button>
+                            <button id="number_clear">C</button>
+                            <button id="number_left_parenth">(</button>
+                            <button id="number_right_parenth">)</button>
                         </div>
                         <div class="numbers_row">
-                            <button id="number_7" onclick="SendInput('number_7')">7</button>
-                            <button id="number_8" onclick="SendInput('number_8')">8</button>
-                            <button id="number_9" onclick="SendInput('number_9')">9</button>
+                            <button id="number_7">7</button>
+                            <button id="number_8">8</button>
+                            <button id="number_9">9</button>
                         </div>
                         <div class="numbers_row">
-                            <button id="number_4" onclick="SendInput('number_4')">4</button>
-                            <button id="number_5" onclick="SendInput('number_5')">5</button>
-                            <button id="number_6" onclick="SendInput('number_6')">6</button>
+                            <button id="number_4">4</button>
+                            <button id="number_5">5</button>
+                            <button id="number_6">6</button>
                         </div>
                         <div class="numbers_row">
-                            <button id="number_1" onclick="SendInput('number_1')">1</button>
-                            <button id="number_2" onclick="SendInput('number_2')">2</button>
-                            <button id="number_3" onclick="SendInput('number_3')">3</button>
+                            <button id="number_1">1</button>
+                            <button id="number_2">2</button>
+                            <button id="number_3">3</button>
                         </div>
                         <div class="numbers_row">
-                            <button id="number_0" onclick="SendInput('number_0')">0</button>
-                            <button id="number_point" onclick="SendInput('number_point')">.</button>
-                            <button id="number_equal" onclick="Equal()">=</button>
+                            <button id="number_0">0</button>
+                            <button id="number_point">.</button>
+                            <button id="number_equal">=</button>
                         </div>
                     </div>
                     <div id="simp_operations" class="flex_divisor">
-                        <button id="sop_more" onclick="SendInput('sop_more')">+</button>
-                        <button id="sop_less" onclick="SendInput('sop_less')">-</button>
-                        <button id="sop_divide" onclick="SendInput('sop_divide')">/</button>
-                        <button id="sop_multiplic" onclick="SendInput('sop_multiplic')">*</button>
-                        <button id="percentage" onclick="SendInput('percentage')">%</button>
+                        <button id="sop_more">+</button>
+                        <button id="sop_less">-</button>
+                        <button id="sop_divide">/</button>
+                        <button id="sop_multiplic">*</button>
+                        <button id="percentage">%</button>
                     </div>
                 </div>
             </section>
             <section id ="calculator_historic">
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
+                <div>
                 </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                <div>((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5<br>
-                    <span>-140.233947368</span>
-                </div>
-                
             </section>
         </div>
         </article>
     </main>
-    <script src="index.js"></script>
 </body>
 </html>
+

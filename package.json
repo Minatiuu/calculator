@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "react": "^18.0.0",
+    "sass": "^1.50.0",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-react": "^7.16.7",
+    "minify": "^8.0.4",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "chmod 777 scripts/* && scripts/init.sh",
+    "devStart": "chmod 777 scripts/* && scripts/devInit.sh"
+  },
+  "type": "module",
+  "name": "calculator",
+  "description": "Treino de Html, Css e Javascript.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minatiuu/calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Minatiuu/calculator/issues"
+  },
+  "homepage": "https://github.com/Minatiuu/calculator#readme"
+}

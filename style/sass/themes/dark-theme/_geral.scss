@@ -1,0 +1,126 @@
+/*
+@author: Minatiuu
+*/
+@charset "UTF-8";
+
+@import "variables";
+
+::selection {/* Seleção */
+    background: $primaryColor;
+    color: #000;
+    text-shadow: 0px 0px 2px #0006;
+}
+
+/* Declarações Globais */
+* {/* Cor Padrão do Texto */
+    color: #eee;
+}
+* {/* Transição Padrão */
+    transition: 0.2s;
+}
+
+/* Classes */
+div.flex_divisor {/* Divisor dos Displays */
+    button {/* Botões */
+        background: $thirdColor;
+        border: 0px;
+        font: 24px 'Ubuntu', sans-serif;
+
+        &:hover {/* Botões ao Passar o Mouse */
+            background: $h-thirdColor;
+        }
+        &:active {/* Botões ao Clicar */
+            background: $a-thirdColor;
+        }
+    }
+}
+
+/* Declarações */
+aside#aside_box {/* Barra Lateral */
+    border-left: 1px solid $primaryColor;
+    border-right: 1px solid $primaryColor;
+    background: #000;
+    z-index: 3;
+    @include p-shadow;
+}
+main#geral_flex_box {/* Conteúdo */
+    z-index: 1;
+    background: $bgImage no-repeat fixed center;
+
+    header#cabeçalho {/* Cabeçalho */
+        background: #050505;
+    }
+    article#calculator_box {/* Área da Calculadora */
+        background: radial-gradient(#4443, #4447, #444a);
+
+        > div {/* Caixa da Calculadora */
+            background: $secundColor;
+            @include p-shadow;
+
+            > section#calculator {/* Seção dos Displays */
+                border: 1px solid transparent;
+                    &:hover {
+                        border: 1px solid $a-primaryColor;
+                    }
+
+                div#geral_data {/* Divisão do Display */
+                    #data_message > div {/* Display do Log */
+                        color: #777;
+                    }
+                    #data_historic > div {/* Display da Última Operação */
+                        color: #999;
+                    }
+                }
+                div#operations_divisor {/* Divisor das Operações */
+                    div#complex_operations > * > div:nth-child(1n+26) {/* Barra Inferior */
+                        > * {
+                            background: $fifthColor;
+                        }
+                        > *:hover {
+                            background: $h-fifthColor;
+                        }
+                        > *:active {
+                            background: $a-fifthColor;
+                        }
+                    }
+                    div#numbers > :first-child > *,
+                    div#numbers > :last-child > * {/* Barra Inferior e Superior */
+                        background: $fifthColor;
+
+                        &:hover {
+                            background: $h-fifthColor;
+                        }
+                        &:active {
+                            background: $a-fifthColor;
+                        }
+                    }
+                        #numbers > :last-child > :last-child {/* Botão Equal */
+                            background: $primaryColor;
+
+                            &:hover {
+                                background: $h-primaryColor;
+                            }
+                            &:active {
+                                background: $a-primaryColor;
+                            }
+                        }
+                }
+            }
+            > section#calculator_historic {/* Seção do Histórico */
+                border: 1px solid transparent;
+                    &:hover {
+                        border: 1px solid $a-primaryColor;
+                    }
+
+                > div > div > div {
+                    > span {
+                        color: $txt-primaryColor;
+                    }
+                    > span#historic_count {
+                        color: $txt-secundColor;
+                    }
+                }
+            }
+        }
+    }
+}

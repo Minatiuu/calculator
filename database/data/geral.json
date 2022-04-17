@@ -1,0 +1,13 @@
+{
+  "jLog": {
+    "sintaxe": "Sintaxe mal formada.",
+    "expression": "Expressão mal formada.",
+    "maxValue": "Valor máximo excedido.",
+    "maxChar": "Valor máximo de caracteres excedido.",
+    "unknownError": "Erro desconhecido"
+  },
+  "tests": {
+    "calculation": "((10 + 2 * 3) - 2^5 * 51 / 19 - 25.251 * 25) / 5",
+    "result": "-140.233947368"
+  }
+}
