@@ -1,4 +1,4 @@
-import operators from "/modules/operators.jsx";
+import operators from "./operators.js";
 const operatorsVar = operators();
 
 export default function input() {

@@ -1,4 +1,4 @@
-import getJson from "./getJson.jsx";
+import getJson from "./getJson.js";
 
 export default function operators() {
     var historicCount = 0;// Defines the initial value
@@ -29,9 +29,8 @@ export default function operators() {
                 ;
 
                 dataHistoric.text(display.innerText);
-                calcHistoric.append(
-                    $(addHistoric.replace(/\s{2,}/g, ""))
-                );// Add the display and the result to the historic
+                calcHistoric.append($(addHistoric));
+                // Add the display and the result to the historic
             }
             addToHistoric();
             try {

@@ -1,5 +1,2 @@
-import getData from "./data.jsx";
-import startCalculator from "./index.jsx";
-
-startCalculator();
-getData();
+import getData from"./data.js";import startCalculator from"./index.js";startCalculator();getData();
+//# sourceMappingURL=exec.js.map

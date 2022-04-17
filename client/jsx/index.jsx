@@ -1,5 +1,5 @@
-import operators from "/modules/operators.jsx";
-import input from "/modules/input.jsx";
+import operators from "/modules/js/operators.js";
+import input from "/modules/js/input.js";
 
 const operatorsVar = operators();
 const inputVar = input();
