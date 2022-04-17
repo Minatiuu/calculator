@@ -1,0 +1,120 @@
+[33m[nodemon] 2.0.15[39m
+[33m[nodemon] reading config ./nodemon.json[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] or send SIGHUP to 447100 to restart[39m
+[33m[nodemon] ignoring: ./.git/**/* node_modules/**/node_modules logs/*.out **/client/js/js **/client/dev_js/**/* **/modules/js/**/* **/modules/dev_js/**/*[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server/server.js`[39m
+[33m[nodemon] forking[39m
+[33m[nodemon] child pid: 447114[39m
+[33m[nodemon] watching 63 files[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/transpilers.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+> [38;2;230;230;230m Listening on port: 8080[m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+babel.config.json
+client
+database
+index.html
+logs
+modules
+node_modules
+nodemon.json
+package.json
+package-lock.json
+page
+README.md
+scripts
+server
+style
+
+[33m[nodemon] files triggering change check: logs/transpilers.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/transpilers.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: client/js/data.js.map[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: client/js/data.js[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[33m[nodemon] delaying restart for 2000ms[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/transpilers.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: client/js/exec.js.map[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: client/js/exec.js[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[33m[nodemon] delaying restart for 2000ms[39m
+[33m[nodemon] files triggering change check: client/js/index.js.map[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: client/js/index.js[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[33m[nodemon] delaying restart for 2000ms[39m
+[33m[nodemon] files triggering change check: logs/transpilers.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] client/js/index.js[39m
+
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[32m[nodemon] starting `node server/server.js`[39m
+[33m[nodemon] forking[39m
+[33m[nodemon] child pid: 447257[39m
+> [38;2;230;230;230m Listening on port: 8080[m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+babel.config.json
+client
+database
+index.html
+logs
+modules
+node_modules
+nodemon.json
+package.json
+package-lock.json
+page
+README.md
+scripts
+server
+style
+
+[33m[nodemon] files triggering change check: scripts/devInit.sh[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: scripts/devInit.sh[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: scripts/devInit.sh[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: scripts/devInit.sh[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[33m[nodemon] files triggering change check: logs/server.out[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m

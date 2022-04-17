@@ -1,6 +1,6 @@
 import { exec } from 'child_process';
-export default function sassTranspiler() {
 
+export default function sassTranspiler() {
     const sassFile = `style/css.scss`;
     const cssMinFile = `style/css/css.min.css`;
     const cssDevFile = `style/dev_css/css.css`;
