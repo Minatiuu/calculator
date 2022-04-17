@@ -3,7 +3,11 @@
     "ignore": [
       ".git",
       "node_modules/**/node_modules",
-      "*.out"
+      "logs/*.out",
+      "**/client/js/js",
+      "**/client/dev_js/",
+      "**/modules/js/",
+      "**/modules/dev_js/"
     ],
     "delay": 2000
 }

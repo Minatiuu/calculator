@@ -2,7 +2,6 @@ import sassTranspiler from '../modules/non-jsx/sassTranspiler.js';
 import { exec } from 'child_process';
 import express from 'express';
 import fs from 'fs';
-import React from 'react';
 const sass = sassTranspiler();
 const app = express();
 

@@ -1,8 +1,14 @@
 #!/bin/sh
-rm nohup.out
-touch nohup.out
-gnome-terminal -- tail -f nohup.out
-nodemon server/server.js > nohup.out &
 
+rm logs/transpilers.out
+touch logs/transpilers.out
+gnome-terminal -- tail -f logs/transpilers.out
 # Transpilador JSX
-scripts/babelTranspiler.sh && fg
+scripts/babelTranspiler.sh > logs/transpilers.out &
+# Transpilador SASS
+scripts/sassTranspiler.sh > logs/transpilers.out &
+
+rm logs/server.out
+touch logs/server.out
+gnome-terminal -- tail -f logs/server.out
+nodemon server/server.js > logs/server.out

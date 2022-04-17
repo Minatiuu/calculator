@@ -1,0 +1,18 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 44 |     @include p-shadow;
+ *    |     ^^^^^^^^^^^^^^^^^
+ *    '
+ *   style/sass/themes/dark-theme/_geral.scss 44:5  @import
+ *   style/css.scss 15:9                            root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 44 \2502      @include p-shadow;\a    \2502      ^^^^^^^^^^^^^^^^^\a    \2575 \a   style/sass/themes/dark-theme/_geral.scss 44:5  @import\a   style/css.scss 15:9                            root stylesheet";
+}

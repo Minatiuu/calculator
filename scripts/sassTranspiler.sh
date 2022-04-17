@@ -1,2 +1,2 @@
-sass --style=compressed style/css.scss style/css/css.min.css
-sass style/css.scss style/dev_css/css.css
+sass --style=compressed --watch style/ style/css/ > logs/transpilers.out &
+sass --watch style/ style/dev_css/ > logs/transpilers.out &
