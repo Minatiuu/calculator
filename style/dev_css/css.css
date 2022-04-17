@@ -10,38 +10,47 @@
   font-family: Ubuntu-Bold;
   src: url(../../database/fonts/Ubuntu/Ubuntu-Bold.ttf);
 }
+
 @font-face {
   font-family: Ubuntu-Bold-Italic;
   src: url(../../database/fonts/Ubuntu/Ubuntu-BoldItalic.ttf);
 }
+
 @font-face {
   font-family: Ubuntu-Italic;
   src: url(../../database/fonts/Ubuntu/Ubuntu-Italic.ttf);
 }
+
 @font-face {
   font-family: Ubuntu-Light;
   src: url(../../database/fonts/Ubuntu/Ubuntu-Light.ttf);
 }
+
 @font-face {
   font-family: Ubuntu-Light-Italic;
   src: url(../../database/fonts/Ubuntu/Ubuntu-LightItalic.ttf);
 }
+
 @font-face {
   font-family: Ubuntu-Medium;
   src: url(../../database/fonts/Ubuntu/Ubuntu-Medium.ttf);
 }
+
 @font-face {
   font-family: Ubuntu-Medium-Italic;
   src: url(../../database/fonts/Ubuntu/Ubuntu-MediumItalic.ttf);
 }
+
 @font-face {
   font-family: Ubuntu-Regular;
   src: url(../../database/fonts/Ubuntu/Ubuntu-Regular.ttf);
 }
+
 /* Geral */
 * {
   /* Aplicação do Border-Sizing geral */
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -57,9 +66,16 @@ body {
 
 .numbers_row {
   /* Linha de Números */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 23.33%;
 }
 
@@ -70,9 +86,15 @@ body {
 
 .nav_icon {
   height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Declarações */
@@ -80,8 +102,13 @@ body {
   /* Corpo da Página */
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 aside#aside_box {
@@ -91,8 +118,13 @@ aside#aside_box {
 
 nav {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 section#nav_top {
@@ -100,7 +132,7 @@ section#nav_top {
 }
 
 section#nav_top > div > div {
-  font: 25px "Ubuntu-Bold", sans-serif;
+  font: 25px 'Ubuntu-Bold', sans-serif;
 }
 
 section#nav_mid {
@@ -115,30 +147,50 @@ main#geral_flex_box {
   /* Página Principal do Conteúdo */
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #cabeçalho {
   /* Cabeçalho da Página */
   height: 36px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #cabeçalho > div {
   /* Texto do Cabeçalho */
-  font: 26px "Ubuntu-Medium", sans-serif;
-  user-select: none;
+  font: 26px 'Ubuntu-Medium', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #calculator_box {
   /* Caixa da Calculadora */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: calc(100% - 36px);
 }
 
@@ -150,6 +202,8 @@ main#geral_flex_box {
   min-height: 400px;
   max-height: 600px;
   height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -166,9 +220,16 @@ main#geral_flex_box {
 }
 
 #geral_data > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #geral_data > div:not(:first-child) > div {
@@ -177,25 +238,30 @@ main#geral_flex_box {
 
 #data_message {
   height: 20%;
-  font: 18px "Ubuntu-Light", sans-serif;
+  font: 18px 'Ubuntu-Light', sans-serif;
 }
 
 #data_display {
   height: 50%;
-  font: 30px "Ubuntu-Bold", sans-serif;
+  font: 30px 'Ubuntu-Bold', sans-serif;
 }
 
 #data_historic {
   height: 30%;
   height: 30%;
-  font: 20px "Ubuntu-Regular", sans-serif;
+  font: 20px 'Ubuntu-Regular', sans-serif;
 }
 
 #operations_divisor {
   /* Display dos Números e Operações */
   height: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #complex_operations {
@@ -204,13 +270,18 @@ main#geral_flex_box {
 }
 
 #cop_grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: 15% auto auto auto auto 15%;
+  -ms-grid-rows: 15% auto auto auto auto 15%;
+      grid-template-rows: 15% auto auto auto auto 15%;
   height: 100%;
   width: 100%;
 }
 
 #cop_grid > div#cop_conversions {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: -6;
   grid-area: 1/7/1/1;
 }
 
@@ -233,8 +304,13 @@ main#geral_flex_box {
 #simp_operations {
   /* Operações Simples */
   width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #simp_operations > * {
@@ -297,6 +373,7 @@ main#geral_flex_box {
 
 * {
   /* Transição Padrão */
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -304,12 +381,14 @@ main#geral_flex_box {
 div.flex_divisor {
   /* Divisor dos Displays */
 }
+
 div.flex_divisor button {
   /* Botões */
   background: #333;
   border: 0px;
-  font: 24px "Ubuntu", sans-serif;
+  font: 24px 'Ubuntu', sans-serif;
 }
+
 div.flex_divisor button:hover {
   /* Botões ao Passar o Mouse */
   background: #292929;
@@ -335,10 +414,12 @@ main#geral_flex_box {
   z-index: 1;
   background: url("../../database/src/wallpaper-1.jpeg") no-repeat fixed center;
 }
+
 main#geral_flex_box header#cabeçalho {
   /* Cabeçalho */
   background: #050505;
 }
+
 main#geral_flex_box article#calculator_box {
   /* Área da Calculadora */
   background: radial-gradient(rgba(68, 68, 68, 0.2), rgba(68, 68, 68, 0.4666666667), rgba(68, 68, 68, 0.6666666667));
@@ -349,66 +430,84 @@ main#geral_flex_box article#calculator_box > div {
   /* Sombra Padrão */
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator {
   /* Seção dos Displays */
   border: 1px solid transparent;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator:hover {
   border: 1px solid #070;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#geral_data {
   /* Divisão do Display */
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#geral_data #data_message > div {
   /* Display do Log */
   color: #777;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#geral_data #data_historic > div {
   /* Display da Última Operação */
   color: #999;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor {
   /* Divisor das Operações */
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#complex_operations > * > div:nth-child(1n+26) {
   /* Barra Inferior */
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#complex_operations > * > div:nth-child(1n+26) > * {
   background: #151515;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#complex_operations > * > div:nth-child(1n+26) > *:hover {
   background: #0f0f0f;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#complex_operations > * > div:nth-child(1n+26) > *:active {
   background: #150808;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :first-child > *,
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :last-child > * {
   /* Barra Inferior e Superior */
   background: #151515;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :first-child > *:hover,
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :last-child > *:hover {
   background: #0f0f0f;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :first-child > *:active,
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor div#numbers > :last-child > *:active {
   background: #150808;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor #numbers > :last-child > :last-child {
   /* Botão Equal */
   background: #0b0;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor #numbers > :last-child > :last-child:hover {
   background: #090;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator div#operations_divisor #numbers > :last-child > :last-child:active {
   background: #070;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator_historic {
   /* Seção do Histórico */
   border: 1px solid transparent;
 }
+
 main#geral_flex_box article#calculator_box > div > section#calculator_historic:hover {
   border: 1px solid #070;
 }
@@ -418,7 +517,4 @@ main#geral_flex_box article#calculator_box > div > section#calculator_historic >
 main#geral_flex_box article#calculator_box > div > section#calculator_historic > div > div > div > span#historic_count {
   color: #777;
 }
-
-/*# sourceMappingURL=geral-config.scss.map */
-
 /*# sourceMappingURL=css.css.map */
